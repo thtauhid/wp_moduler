@@ -1,7 +1,6 @@
 <?php get_header(); ?>
     </div>
   </div>
-  <br>
 
   <div class="row">
     <!--Blog Update-->
