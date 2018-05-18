@@ -17,6 +17,7 @@
       
       <div class="card-body">
         <h2 class="card-title"><?php the_title() ?></h2>
+        <p>On <?php the_time('j F, Y') ?> by <?php the_author_posts_link(); ?></p>
         <p class="card-text"><?php the_content(); ?></p>
       </div>
     </div>
