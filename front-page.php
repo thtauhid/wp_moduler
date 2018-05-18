@@ -1,31 +1,31 @@
 <?php get_header() ?>
 <div class="jumbotron">
   <h1 class="display-3"><?php echo get_theme_mod('main_title', 'Hello, world!'); ?></h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p class="lead"><?php echo get_theme_mod( 'below_text', 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.' ); ?></p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p><?php echo get_theme_mod( 'main_text', 'It uses utility classes for typography and spacing to space content out within the larger container.' ); ?></p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="<?php echo get_theme_mod( 'button_url', '#' ); ?>" role="button"><?php echo get_theme_mod( 'button_text', 'Learn more' ); ?></a>
   </p>
 </div>
     </div>
   </div>
-   <h3 class="text-center">Our Expertise</h3><hr>
+   <h3 class="text-center"><?php echo get_theme_mod('expertise_main_title', 'Our Expertise') ?></h3><hr>
   <div class="row">
     <!--Expertise-->
     <div class="col-12">
       <div class="jumbotron">
-        HTML & CSS:<div class="progress">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+        <?php echo get_theme_mod( 'expertise_1st_element', 'HTML & CSS:' ); ?><div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo get_theme_mod( 'expertise_1st_element_persentage', '60' ); ?>%"></div>
         </div><br>
-        Bootstrap:<div class="progress">
-          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+        <?php echo get_theme_mod( 'expertise_2nd_element', 'Bootstrap:' ); ?><div class="progress">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo get_theme_mod( 'expertise_2nd_element_persentage', '70' ); ?>%"></div>
         </div><br>
-        PHP:<div class="progress">
-          <div class="progress-bar progress-bar-striped bg-faded progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+        <?php echo get_theme_mod( 'expertise_3rd_element', 'PHP:' ); ?><div class="progress">
+          <div class="progress-bar progress-bar-striped bg-faded progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo get_theme_mod( 'expertise_3rd_element_persentage', '80' ); ?>%"></div>
         </div><br>
-        Photoshop:<div class="progress">
-          <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        <?php echo get_theme_mod( 'expertise_4th_element', 'Photoshop:' ); ?><div class="progress">
+          <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo get_theme_mod( 'expertise_4th_element_persentage', '90' ); ?>%"></div>
         </div>
       </div>
     </div>

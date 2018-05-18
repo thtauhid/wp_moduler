@@ -61,7 +61,7 @@ function moduler_customize_register_header($wp_customize) {
 
 	//Button Text
 	$wp_customize->add_setting('button_text', array(
-		'default' => __('learn more', 'moduler'),
+		'default' => __('Learn more', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
@@ -139,6 +139,20 @@ function moduler_customize_register_expertise($wp_customize) {
 
 
 
+	//First Element Percentage:
+	$wp_customize->add_setting('expertise_1st_element_persentage', array(
+		'default' => __('60', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('expertise_1st_element_persentage', array(
+		'label' => __('First Element Percentage:', 'moduler'),
+		'section' => 'Expertise',
+		'priority' => '3'
+	));
+
+
+
 
 	//Second Element Name:
 	$wp_customize->add_setting('expertise_2nd_element', array(
@@ -149,7 +163,22 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_control('expertise_2nd_element', array(
 		'label' => __('Second Element Name:', 'moduler'),
 		'section' => 'Expertise',
-		'priority' => '3'
+		'priority' => '4'
+	));
+
+
+
+
+	//Second Element Percentage:
+	$wp_customize->add_setting('expertise_2nd_element_persentage', array(
+		'default' => __('70', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('expertise_2nd_element_persentage', array(
+		'label' => __('Second Element Percentage:', 'moduler'),
+		'section' => 'Expertise',
+		'priority' => '5'
 	));
 
 
@@ -164,8 +193,23 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_control('expertise_3rd_element', array(
 		'label' => __('Third Element Name:', 'moduler'),
 		'section' => 'Expertise',
-		'priority' => '4'
+		'priority' => '6'
 	));
+
+
+
+	//Third Element Percentage:
+	$wp_customize->add_setting('expertise_3rd_element_persentage', array(
+		'default' => __('80', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('expertise_3rd_element_persentage', array(
+		'label' => __('Third Element Percentage:', 'moduler'),
+		'section' => 'Expertise',
+		'priority' => '7'
+	));
+
 
 
 	//Fourth Element Name:
@@ -177,8 +221,23 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_control('expertise_4th_element', array(
 		'label' => __('Fourth Element Name:', 'moduler'),
 		'section' => 'Expertise',
-		'priority' => '5'
+		'priority' => '8'
 	));
+
+
+
+	//Fourth Element Percentage:
+	$wp_customize->add_setting('expertise_4th_element_persentage', array(
+		'default' => __('90', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('expertise_4th_element_persentage', array(
+		'label' => __('Fourth Element Percentage:', 'moduler'),
+		'section' => 'Expertise',
+		'priority' => '9'
+	));
+
 
 
 }
