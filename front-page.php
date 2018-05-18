@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header() ?> 
 <div class="jumbotron">
   <h1 class="display-3"><?php echo get_theme_mod('main_title', 'Hello, world!'); ?></h1>
   <p class="lead"><?php echo get_theme_mod( 'below_text', 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.' ); ?></p>
