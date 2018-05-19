@@ -243,3 +243,79 @@ function moduler_customize_register_expertise($wp_customize) {
 }
 
 add_action('customize_register', 'moduler_customize_register_expertise');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function moduler_customize_register_client_area($wp_customize) {
+
+
+	//registering section -> Client Area
+	$wp_customize->add_section('Client', array(
+		'title'	=>	__('Client Area', 'moduler'),
+		'description'	=>	__('Client Area Options', 'moduler'),
+		'priority'	=>	'150',
+	));
+
+
+
+	//Title
+	$wp_customize->add_setting('client_main_title', array(
+		'default' => __('Client Area', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('client_main_title', array(
+		'label' => __('Title', 'moduler'),
+		'section' => 'Client',
+		'priority' => '1'
+	));
+
+
+	//Client 01
+
+
+	
+		//Name
+		$wp_customize->add_setting('client_1_name', array(
+			'default' => __('Tasnimul H. Tauhid', 'moduler'),
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control('client_1_name', array(
+			'label' => __('Client 01 Name:', 'moduler'),
+			'section' => 'Client',
+			'priority' => ''
+		));
+
+		//Text
+		$wp_customize->add_setting('client_1_text', array(
+			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control('client_1_text', array(
+			'label' => __('Client 01 Text:', 'moduler'),
+			'section' => 'Client',
+			'priority' => ''
+		));
+
+
+
+
+
+}
+
+add_action('customize_register', 'moduler_customize_register_client_area');

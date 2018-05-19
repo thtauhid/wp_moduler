@@ -32,7 +32,7 @@
   </div>
  <h3 class="text-center">What Our Clients Say</h3><hr>
   <div class="row">
-    <!--Expertise-->
+    <!--Client Area-->
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
             <div class="card-header"><img src="<?php bloginfo('template_url'); ?>/assets/placeholder_face.png" height="50" width="50" style="padding: 5px"> Tasnimul H. Tauhid</div>
