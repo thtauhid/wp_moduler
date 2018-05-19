@@ -273,7 +273,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 	//Title
 	$wp_customize->add_setting('client_main_title', array(
-		'default' => __('Client Area', 'moduler'),
+		'default' => __('What Our Clients Say', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
@@ -286,8 +286,20 @@ function moduler_customize_register_client_area($wp_customize) {
 
 	//Client 01
 
+		//Image
+		$wp_customize->add_setting('client_1_img', array(
+			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+			'type' => 'theme_mod',
+		));
 
-	
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'client_1_img', array(
+			'label' => __('Client 01 Image:', 'moduler'),
+			'section' => 'Client',
+			'priority' => '2'
+		)));
+
+
+
 		//Name
 		$wp_customize->add_setting('client_1_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
@@ -297,7 +309,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_control('client_1_name', array(
 			'label' => __('Client 01 Name:', 'moduler'),
 			'section' => 'Client',
-			'priority' => ''
+			'priority' => '3'
 		));
 
 		//Text
@@ -309,7 +321,91 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_control('client_1_text', array(
 			'label' => __('Client 01 Text:', 'moduler'),
 			'section' => 'Client',
-			'priority' => ''
+			'priority' => '4'
+		));
+
+
+
+	//Client 02
+
+		//Image
+		$wp_customize->add_setting('client_2_img', array(
+			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'client_2_img', array(
+			'label' => __('Client 02 Image:', 'moduler'),
+			'section' => 'Client',
+			'priority' => '5'
+		)));
+
+
+
+		//Name
+		$wp_customize->add_setting('client_2_name', array(
+			'default' => __('Tasnimul H. Tauhid', 'moduler'),
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control('client_2_name', array(
+			'label' => __('Client 02 Name:', 'moduler'),
+			'section' => 'Client',
+			'priority' => '6'
+		));
+
+		//Text
+		$wp_customize->add_setting('client_2_text', array(
+			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control('client_2_text', array(
+			'label' => __('Client 02 Text:', 'moduler'),
+			'section' => 'Client',
+			'priority' => '7'
+		));
+
+
+
+	//Client 03
+
+		//Image
+		$wp_customize->add_setting('client_3_img', array(
+			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'client_3_img', array(
+			'label' => __('Client 03 Image:', 'moduler'),
+			'section' => 'Client',
+			'priority' => '8'
+		)));
+
+
+
+		//Name
+		$wp_customize->add_setting('client_3_name', array(
+			'default' => __('Tasnimul H. Tauhid', 'moduler'),
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control('client_3_name', array(
+			'label' => __('Client 03 Name:', 'moduler'),
+			'section' => 'Client',
+			'priority' => '9'
+		));
+
+		//Text
+		$wp_customize->add_setting('client_3_text', array(
+			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
+			'type' => 'theme_mod',
+		));
+
+		$wp_customize->add_control('client_3_text', array(
+			'label' => __('Client 03 Text:', 'moduler'),
+			'section' => 'Client',
+			'priority' => '10'
 		));
 
 
