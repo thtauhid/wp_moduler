@@ -858,3 +858,164 @@ function moduler_customize_register_cta($wp_customize) {
 }
 
 add_action('customize_register', 'moduler_customize_register_cta');
+
+
+
+function moduler_customize_register_card_1($wp_customize) {
+
+
+	//registering section -> Card 1
+	$wp_customize->add_section('Card_1', array(
+		'title'	=>	__('Card 1', 'moduler'),
+		'description'	=>	__('Card 1 Options', 'moduler'),
+		'priority'	=>	'180',
+	));
+
+
+
+	//Image
+	$wp_customize->add_setting('card_1_image', array(
+		'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'card_1_image', array(
+		'label' => __('Card 01 Image:', 'moduler'),
+		'section' => 'Card_1',
+		'priority' => '1'
+	)));
+
+
+
+	//Text
+	$wp_customize->add_setting('card_1_text', array(
+		'default' => __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('card_1_text', array(
+		'label' => __('Card 1 Text', 'moduler'),
+		'section' => 'Card_1',
+		'priority' => '2'
+	));
+
+}
+
+add_action('customize_register', 'moduler_customize_register_card_1');
+
+
+
+function moduler_customize_register_card_2($wp_customize) {
+
+
+	//registering section -> Card 2
+	$wp_customize->add_section('Card_2', array(
+		'title'	=>	__('Card 2', 'moduler'),
+		'description'	=>	__('Card 2 Options', 'moduler'),
+		'priority'	=>	'190',
+	));
+
+
+
+	//Image
+	$wp_customize->add_setting('card_2_image', array(
+		'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'card_2_image', array(
+		'label' => __('Card 02 Image:', 'moduler'),
+		'section' => 'Card_2',
+		'priority' => '1'
+	)));
+
+
+
+	//Text
+	$wp_customize->add_setting('card_2_text', array(
+		'default' => __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('card_2_text', array(
+		'label' => __('Card 2 Text', 'moduler'),
+		'section' => 'Card_2',
+		'priority' => '2'
+	));
+
+}
+
+add_action('customize_register', 'moduler_customize_register_card_2');
+
+
+
+
+function moduler_customize_register_social_media($wp_customize) {
+
+
+	//registering section -> Social Media Links
+	$wp_customize->add_section('Social_Media', array(
+		'title'	=>	__('Social Media', 'moduler'),
+		'description'	=>	__('Social Media Links:', 'moduler'),
+		'priority'	=>	'195',
+	));
+
+
+	//FB
+	$wp_customize->add_setting('social_media_fb', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('social_media_fb', array(
+		'label' => __('FB Page Link:', 'moduler'),
+		'section' => 'Social_Media',
+		'priority' => '1'
+	));
+
+
+	//Google+
+	$wp_customize->add_setting('social_media_google_plus', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('social_media_google_plus', array(
+		'label' => __('G+ Page Link:', 'moduler'),
+		'section' => 'Social_Media',
+		'priority' => '2'
+	));
+
+
+
+
+	//Twitter
+	$wp_customize->add_setting('social_media_twitter', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('social_media_twitter', array(
+		'label' => __('Twitter ID Link:', 'moduler'),
+		'section' => 'Social_Media',
+		'priority' => '3'
+	));
+
+
+	//Linkedin
+	$wp_customize->add_setting('social_media_linkedin', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('social_media_linkedin', array(
+		'label' => __('Linkedin Link:', 'moduler'),
+		'section' => 'Social_Media',
+		'priority' => '4'
+	));
+
+
+
+}
+
+add_action('customize_register', 'moduler_customize_register_social_media');
