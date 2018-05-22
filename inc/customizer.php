@@ -92,14 +92,6 @@ function moduler_customize_register_header($wp_customize) {
 
 add_action('customize_register', 'moduler_customize_register_header');
 
-
-
-
-
-
-
-
-
 function moduler_customize_register_expertise($wp_customize) {
 
 
@@ -107,7 +99,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_section('Expertise', array(
 		'title'	=>	__('Expertise', 'moduler'),
 		'description'	=>	__('Expertise Options', 'moduler'),
-		'priority'	=>	'140',
+		'priority'	=>	'131',
 	));
 
 
@@ -245,20 +237,6 @@ function moduler_customize_register_expertise($wp_customize) {
 add_action('customize_register', 'moduler_customize_register_expertise');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function moduler_customize_register_client_area($wp_customize) {
 
 
@@ -266,7 +244,7 @@ function moduler_customize_register_client_area($wp_customize) {
 	$wp_customize->add_section('Client', array(
 		'title'	=>	__('Client Area', 'moduler'),
 		'description'	=>	__('Client Area Options', 'moduler'),
-		'priority'	=>	'150',
+		'priority'	=>	'132',
 	));
 
 
@@ -408,35 +386,9 @@ function moduler_customize_register_client_area($wp_customize) {
 			'priority' => '10'
 		));
 
-
-
-
-
 }
 
 add_action('customize_register', 'moduler_customize_register_client_area');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -447,7 +399,7 @@ function moduler_customize_register_our_team($wp_customize) {
 	$wp_customize->add_section('Team', array(
 		'title'	=>	__('Our Team', 'moduler'),
 		'description'	=>	__('Our Team Options', 'moduler'),
-		'priority'	=>	'160',
+		'priority'	=>	'133',
 	));
 
 
@@ -774,7 +726,7 @@ function moduler_customize_register_cta($wp_customize) {
 	$wp_customize->add_section('CTA', array(
 		'title'	=>	__('CTA', 'moduler'),
 		'description'	=>	__('CTA Options', 'moduler'),
-		'priority'	=>	'170',
+		'priority'	=>	'134',
 	));
 
 
@@ -868,7 +820,7 @@ function moduler_customize_register_card_1($wp_customize) {
 	$wp_customize->add_section('Card_1', array(
 		'title'	=>	__('Card 1', 'moduler'),
 		'description'	=>	__('Card 1 Options', 'moduler'),
-		'priority'	=>	'180',
+		'priority'	=>	'135',
 	));
 
 
@@ -912,7 +864,7 @@ function moduler_customize_register_card_2($wp_customize) {
 	$wp_customize->add_section('Card_2', array(
 		'title'	=>	__('Card 2', 'moduler'),
 		'description'	=>	__('Card 2 Options', 'moduler'),
-		'priority'	=>	'190',
+		'priority'	=>	'136',
 	));
 
 
@@ -957,7 +909,7 @@ function moduler_customize_register_social_media($wp_customize) {
 	$wp_customize->add_section('Social_Media', array(
 		'title'	=>	__('Social Media', 'moduler'),
 		'description'	=>	__('Social Media Links:', 'moduler'),
-		'priority'	=>	'195',
+		'priority'	=>	'137',
 	));
 
 
@@ -1019,3 +971,74 @@ function moduler_customize_register_social_media($wp_customize) {
 }
 
 add_action('customize_register', 'moduler_customize_register_social_media');
+
+
+function moduler_customize_register_contact($wp_customize) {
+
+
+	//registering section -> Contact
+	$wp_customize->add_section('Contact', array(
+		'title'	=>	__('Contact', 'moduler'),
+		'description'	=>	__('Contact Options:', 'moduler'),
+		'priority'	=>	'138',
+	));
+
+
+	//Google Maps Longitude
+	$wp_customize->add_setting('contact_google_maps_long', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+ 
+ 	$wp_customize->add_control('contact_google_maps_long', array(
+		'label' => __('Google Maps Longitude:', 'moduler'),
+		'section' => 'Contact',
+		'priority' => '1'
+	));
+
+
+	//Google Maps Latitude
+	$wp_customize->add_setting('contact_google_maps_lat', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('contact_google_maps_lat', array(
+		'label' => __('Google Maps Latitude:', 'moduler'),
+		'section' => 'Contact',
+		'priority' => '2'
+	));
+
+
+
+
+	//Google Maps API Key
+	$wp_customize->add_setting('contact_google_maps_api_key', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('contact_google_maps_api_key', array(
+		'label' => __('Google Maps API Key:', 'moduler'),
+		'section' => 'Contact',
+		'priority' => '3'
+	));
+
+
+	//Email : To address
+	$wp_customize->add_setting('contact_email_to_address', array(
+		'default' => __('', 'moduler'),
+		'type' => 'theme_mod',
+	));
+
+	$wp_customize->add_control('contact_email_to_address', array(
+		'label' => __('To email address:', 'moduler'),
+		'section' => 'Contact',
+		'priority' => '4'
+	));
+
+
+
+}
+
+add_action('customize_register', 'moduler_customize_register_contact');

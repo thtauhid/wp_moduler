@@ -30,98 +30,94 @@
       </div>
     </div>
   </div>
- <h3 class="text-center">What Our Clients Say</h3><hr>
+ <h3 class="text-center"><?php echo get_theme_mod('client_main_title', 'What Our Clients Say'); ?></h3><hr>
   <div class="row">
     <!--Client Area-->
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"><img src="<?php bloginfo('template_url'); ?>/assets/placeholder_face.png" height="50" width="50" style="padding: 5px"> Tasnimul H. Tauhid</div>
+            <div class="card-header"> <img src="<?php echo get_theme_mod('client_1_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_1_name', 'Tasnimul H. Tauhid'); ?></div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php echo get_theme_mod('client_1_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
             </div>
           </div>
     </div>
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"><img src="<?php bloginfo('template_url'); ?>/assets/placeholder_face.png" height="50" width="50" style="padding: 5px"> Tasnimul H. Tauhid</div>
+            <div class="card-header"> <img src="<?php echo get_theme_mod('client_2_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_2_name', 'Tasnimul H. Tauhid'); ?></div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php echo get_theme_mod('client_2_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
             </div>
           </div>
     </div>
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"><img src="<?php bloginfo('template_url'); ?>/assets/placeholder_face.png" height="50" width="50" style="padding: 5px"> Tasnimul H. Tauhid</div>
+            <div class="card-header"> <img src="<?php echo get_theme_mod('client_3_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_3_name', 'Tasnimul H. Tauhid'); ?></div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php echo get_theme_mod('client_3_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
             </div>
           </div>
     </div>
   </div>
 
- <h3 class="text-center">Our Awesome Team</h3><hr>
+ <h3 class="text-center"><?php echo get_theme_mod('', 'Our Awesome Team'); ?></h3><hr>
   <div class="row">
     <!--Our Team-->
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/assets/placeholder_face.png" style="padding: 25px">
+            <img class="card-img-top" src="<?php echo get_theme_mod('team_member_1_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
             <div class="card-header">
-              <h4 class="card-title text-center">Tasnimul H. Tauhid</h4>
-              <h6 class="card-title text-center">Web Developer</h6>
+              <h4 class="card-title text-center"><?php echo get_theme_mod('team_member_1_name', 'Tasnimul H. Tauhid'); ?></h4>
+              <h6 class="card-title text-center"><?php echo get_theme_mod('team_member_1_designation', 'Web Developer'); ?></h6>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size: 25px;"></i></button>
+              <p class="card-text"><?php echo get_theme_mod('team_member_1_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
+              <a href="<?php echo get_theme_mod('', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_1_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_1_email', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
     </div>
-
-
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/assets/placeholder_face.png" style="padding: 25px">
+            <img class="card-img-top" src="<?php echo get_theme_mod('team_member_2_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
             <div class="card-header">
-              <h4 class="card-title text-center">Tasnimul H. Tauhid</h4>
-              <h6 class="card-title text-center">Web Developer</h6>
+              <h4 class="card-title text-center"><?php echo get_theme_mod('team_member_2_name', 'Tasnimul H. Tauhid'); ?></h4>
+              <h6 class="card-title text-center"><?php echo get_theme_mod('team_member_2_designation', 'Web Developer'); ?></h6>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size: 25px;"></i></button>
+              <p class="card-text"><?php echo get_theme_mod('team_member_2_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
+              <a href="<?php echo get_theme_mod('', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_2_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_2_email', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
     </div>
-        <div class="col-4">
+    <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top" src="<?php bloginfo('template_url'); ?>/assets/placeholder_face.png"  style="padding: 25px">
+            <img class="card-img-top" src="<?php echo get_theme_mod('team_member_3_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
             <div class="card-header">
-              <h4 class="card-title text-center">Tasnimul H. Tauhid</h4>
-              <h6 class="card-title text-center">Web Developer</h6>
+              <h4 class="card-title text-center"><?php echo get_theme_mod('team_member_3_name', 'Tasnimul H. Tauhid'); ?></h4>
+              <h6 class="card-title text-center"><?php echo get_theme_mod('team_member_3_designation', 'Web Developer'); ?></h6>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button>
-              <button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size: 25px;"></i></button>
+              <p class="card-text"><?php echo get_theme_mod('team_member_3_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
+              <a href="<?php echo get_theme_mod('', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_3_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_3_email', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
     </div>
   </div>
 
- <br>     <h3 class="text-center">The Call To Action Button</h3><hr>
+ <br>     
+ <h3 class="text-center"><?php echo get_theme_mod('', ''); ?>The Call To Action Button</h3><hr>
   <div class="row">
     <!--Full Scape-->
     <div class="col-12">
       <div class="jumbotron">
 <blockquote class="blockquote text-center" >
-  <h3>Something, That is pre built</h3>
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <h3><?php echo get_theme_mod('', ''); ?>Something, That is pre built</h3>
+  <p class="mb-0"><?php echo get_theme_mod('', ''); ?>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer><br>
   <button type="button" class="btn btn-outline-primary" style="padding: 15px; font-size: 15px;"><b>Check Out</b></button>
 </blockquote>
@@ -141,7 +137,7 @@
     <div class="col-8" style="">
       <div class="jumbotron">
         <blockquote class="blockquote">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <p class="mb-0"><?php echo get_theme_mod('', ''); ?>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -213,14 +209,14 @@
   </div>
 </div>
   </div>
-<h3 class="text-center">Contact</h3><hr>
+<h3 class="text-center"><?php echo get_theme_mod('', ''); ?>Contact</h3><hr>
   <div class="row mb-4">
     <!--Contact-->
     <div class="col-8">
       <div id="map" style="height: 100%;width: 100%"></div>
       <script>
         function initMap() {
-          var uluru = {lat: 24.8679073, lng: 89.357053};
+          var uluru = {lat: <?php echo get_theme_mod('', ''); ?>24.8679073, lng: <?php echo get_theme_mod('', ''); ?>89.357053};
           var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
             center: uluru
@@ -232,7 +228,7 @@
         }
       </script>
       <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSRXlGoQAIbi1yydLbVayIRw8OuBJaeiw&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=<?php echo get_theme_mod('', ''); ?>AIzaSyCSRXlGoQAIbi1yydLbVayIRw8OuBJaeiw&callback=initMap">
       </script>
     </div>
     <div class="col-4">
