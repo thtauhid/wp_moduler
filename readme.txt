@@ -1,6 +1,6 @@
+
 Photocredit:
 
-backlit-clouds-crescent-moon-556664.jpg	:	Photo by luizclas from Pexels
-affection-afterglow-backlit-556667.jpg	:	Photo by luizclas from Pexels
-affection-afterglow-backlit-556667.jpg	:	Photo by luizclas from Pexels
-adult-blur-cap-701739.jpg				:	Photo by Kristina Paukshtite from Pexels
+beard-eyewear-face-874158.jpg				:	Photo by bruce mars from Pexels
+adolescent-attractive-beautiful-638700.jpg	:	Photo by Thierry Fillieul from Pexels
+beautiful-blur-carefree-713312.jpg			:	Photo by Min An from Pexels
