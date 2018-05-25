@@ -905,7 +905,7 @@ function moduler_customize_register_contact($wp_customize) {
  	$wp_customize->add_control('contact_title', array(
 		'label' => __('Title:', 'moduler'),
 		'section' => 'Contact',
-		'priority' => '0'
+		'priority' => '1'
 	));
 
 
@@ -919,7 +919,7 @@ function moduler_customize_register_contact($wp_customize) {
 	$wp_customize->add_control('contact_email_to_address', array(
 		'label' => __('To email address:', 'moduler'),
 		'section' => 'Contact',
-		'priority' => '4'
+		'priority' => '2'
 	));
 
 
