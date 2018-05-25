@@ -32,94 +32,109 @@
   </div>
  <h3 class="text-center"><?php echo get_theme_mod('client_main_title', 'What Our Clients Say'); ?></h3><hr>
   <div class="row">
+
     <!--Client Area-->
+
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"> <img src="<?php echo get_theme_mod('client_1_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_1_name', 'Tasnimul H. Tauhid'); ?></div>
+            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('client_1_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_1_name', 'Tasnimul H. Tauhid'); ?></div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('client_1_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
             </div>
           </div>
     </div>
+
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"> <img src="<?php echo get_theme_mod('client_2_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_2_name', 'Tasnimul H. Tauhid'); ?></div>
+            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('client_2_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_2_name', 'Tasnimul H. Tauhid'); ?></div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('client_2_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
             </div>
           </div>
     </div>
+
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"> <img src="<?php echo get_theme_mod('client_3_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_3_name', 'Tasnimul H. Tauhid'); ?></div>
+            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('client_3_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('client_3_name', 'Tasnimul H. Tauhid'); ?></div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('client_3_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
             </div>
           </div>
     </div>
   </div>
-
  <h3 class="text-center"><?php echo get_theme_mod('', 'Our Awesome Team'); ?></h3><hr>
   <div class="row">
     <!--Our Team-->
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top" src="<?php echo get_theme_mod('team_member_1_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
+
+            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('team_member_1_img', get_bloginfo('template_url').'/assets/face1.png'); ?>" style="padding: 25px" >
+
             <div class="card-header">
               <h4 class="card-title text-center"><?php echo get_theme_mod('team_member_1_name', 'Tasnimul H. Tauhid'); ?></h4>
               <h6 class="card-title text-center"><?php echo get_theme_mod('team_member_1_designation', 'Web Developer'); ?></h6>
             </div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('team_member_1_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
-              <a href="<?php echo get_theme_mod('', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_1_facebook', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
               <a href="<?php echo get_theme_mod('team_member_1_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
-              <a href="<?php echo get_theme_mod('team_member_1_email', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button></a>
+              <a href="mailto:<?php echo get_theme_mod('team_member_1_email', ''); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
     </div>
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top" src="<?php echo get_theme_mod('team_member_2_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
+            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('team_member_2_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
             <div class="card-header">
               <h4 class="card-title text-center"><?php echo get_theme_mod('team_member_2_name', 'Tasnimul H. Tauhid'); ?></h4>
               <h6 class="card-title text-center"><?php echo get_theme_mod('team_member_2_designation', 'Web Developer'); ?></h6>
             </div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('team_member_2_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
-              <a href="<?php echo get_theme_mod('', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
+              <a href="<?php echo get_theme_mod('team_member_2_facebook', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
               <a href="<?php echo get_theme_mod('team_member_2_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
-              <a href="<?php echo get_theme_mod('team_member_2_email', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button></a>
+              <a href="mailto:<?php echo get_theme_mod('team_member_2_email', ''); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
     </div>
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top" src="<?php echo get_theme_mod('team_member_3_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
+            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('team_member_3_img', get_bloginfo('template_url').'/assets/placeholder_face.png'); ?>" style="padding: 25px">
             <div class="card-header">
               <h4 class="card-title text-center"><?php echo get_theme_mod('team_member_3_name', 'Tasnimul H. Tauhid'); ?></h4>
               <h6 class="card-title text-center"><?php echo get_theme_mod('team_member_3_designation', 'Web Developer'); ?></h6>
             </div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('team_member_3_text', 'Some quick example text to build on the card title and make up the bulk of the cards content.'); ?></p>
-              <a href="<?php echo get_theme_mod('', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
-              <a href="<?php echo get_theme_mod('team_member_3_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
-              <a href="<?php echo get_theme_mod('team_member_3_email', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-google-plus-square"  style="font-size:25px; "></i></button></a>
+
+              <a href="<?php echo get_theme_mod('team_member_3_facebook', '#'); ?>">
+                <button type="button" class="btn btn-outline-primary" style="padding: 5px;">
+                  <i class="fa fa-facebook-square"  style="font-size: 25px;"></i>
+                </button>
+              </a>
+
+              <a href="<?php echo get_theme_mod('team_member_3_twitter', '#'); ?>">
+                <button type="button" class="btn btn-outline-primary" style="padding: 5px;">
+                  <i class="fa fa-twitter-square"  style="font-size:25px; "></i>
+                </button>
+              </a>
+              <a href="mailto:<?php echo get_theme_mod('team_member_3_email', ''); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
     </div>
   </div>
 
  <br>     
- <h3 class="text-center"><?php echo get_theme_mod('', ''); ?>The Call To Action Button</h3><hr>
+ <h3 class="text-center"><?php echo get_theme_mod('cta_title', 'The Call To Action Button'); ?></h3><hr>
   <div class="row">
     <!--Full Scape-->
     <div class="col-12">
       <div class="jumbotron">
 <blockquote class="blockquote text-center" >
-  <h3><?php echo get_theme_mod('', ''); ?>Something, That is pre built</h3>
-  <p class="mb-0"><?php echo get_theme_mod('', ''); ?>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer><br>
-  <button type="button" class="btn btn-outline-primary" style="padding: 15px; font-size: 15px;"><b>Check Out</b></button>
+  <h3><?php echo get_theme_mod('cta_sub_title', 'Something, That is pre built'); ?></h3>
+  <p class="mb-0"><?php echo get_theme_mod('cta_main_text', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>'); ?><br>
+  <a href="<?php echo get_theme_mod('cta_button_url', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 15px; font-size: 15px;"><b><?php echo get_theme_mod('cta_button_text', 'Check Out'); ?></b></button></a>
 </blockquote>
       </div>
     </div>
@@ -129,109 +144,76 @@
 
   </div>
 
-  <div class="row">
-    <!--One Side Image-->
-    <div class="col-4">
-      <img class="img" src="<?php bloginfo('template_url'); ?>/assets/future.jpg" width="100%" height="93%">
-    </div>
-    <div class="col-8" style="">
-      <div class="jumbotron">
-        <blockquote class="blockquote">
-          <p class="mb-0"><?php echo get_theme_mod('', ''); ?>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <!--One Side Image-->
-    <div class="col-8" style="">
-      <div class="jumbotron">
-        <blockquote class="blockquote">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
-    </div>
-    <div class="col-4">
-      <img class="img" src="<?php bloginfo('template_url'); ?>/assets/future.jpg" width="100%" height="93%">
-    </div>  </div>
   <h3 class="text-center">Latest Update From Blog</h3><hr>
   <div class="row">
+
+         <?php 
+            $args_latest = array(           
+            'post_type' => 'post',
+            'ignore_sticky_posts' => 0,
+            'posts_per_page' => 3       
+        );
+            $the_query = new WP_Query($args_latest); ?>
+
     <!--Blog Update-->
-  <div class="col-4">
-    <div class="card mb-4">
-      <img class="img-thumbnail" src="http://via.placeholder.com/250x200"><br>
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" class="btn btn-outline-primary">More >></button><br>
-      </div>
-    </div>
-  </div>
+    <?php if(have_posts()) : ?>
+            <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+
 
   <div class="col-4">
     <div class="card mb-4">
-      <img class="img-thumbnail" src="http://via.placeholder.com/250x200"><br>
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" class="btn btn-outline-primary">More >></button><br>
-      </div>
-    </div>
-  </div>
+     <a href="<?php the_permalink(); ?>"> <img class="img-thumbnail" src="
+      <?php 
+      if(has_post_thumbnail()) {the_post_thumbnail_url();} else{echo "http://via.placeholder.com/380x210";} ?>"></a>
+       <div class="card-body">
+        <h4 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
+        <p>On <?php the_time('j F, Y') ?> by <?php the_author_posts_link(); ?> </p>
 
-   <div class="col-4">
-    <div class="card mb-4">
-      <img class="img-thumbnail" src="http://via.placeholder.com/250x200"><br>
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" class="btn btn-outline-primary">More >></button><br>
+        <p class="card-text"><?php the_excerpt() ?></p>
+          <button type="button" class="a btn btn-outline-primary"><a href="<?php the_permalink() ?>">More >></a></button><br>
       </div>
     </div>
   </div>
-  </div><br>
-    <h3 class="text-center">Find Us On Social Media</h3><hr>
-  <div class="row">
-    <!--Social Media-->
-<div class="col-12">
-  <div class="jumbotron text-center">
-    <button type="button" class="btn btn-outline-primary" style="padding: 15px;"><i class="fa fa-facebook-square"  style="font-size: 80px;"></i></button>
-    <button type="button" class="btn btn-outline-primary" style="padding: 15px;"><i class="fa fa-google-plus-square"  style="font-size: 80px;"></i></button>
-    <button type="button" class="btn btn-outline-primary" style="padding: 15px;"><i class="fa fa-twitter-square"  style="font-size: 80px"></i></button>
-    <button type="button" class="btn btn-outline-primary" style="padding: 15px;"><i class="fa fa-linkedin-square"  style="font-size: 80px"></i></button>
+<?php endwhile; ?>
   </div>
-</div>
-  </div>
-<h3 class="text-center"><?php echo get_theme_mod('', ''); ?>Contact</h3><hr>
+        <?php else : ?>
+      <p><?php __('No Posts Found'); ?></p>
+    <?php endif; ?>
+  <br>
+
+<h3 class="text-center"><?php echo get_theme_mod('contact_title', 'Contact'); ?></h3><hr>
   <div class="row mb-4">
     <!--Contact-->
-    <div class="col-8">
-      <div id="map" style="height: 100%;width: 100%"></div>
-      <script>
-        function initMap() {
-          var uluru = {lat: <?php echo get_theme_mod('', ''); ?>24.8679073, lng: <?php echo get_theme_mod('', ''); ?>89.357053};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-          });
-        }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=<?php echo get_theme_mod('', ''); ?>AIzaSyCSRXlGoQAIbi1yydLbVayIRw8OuBJaeiw&callback=initMap">
-      </script>
+    <div class="col-2">
+      <div class="text-center">
+
+        <a href="<?php echo get_theme_mod('social_media_fb', '#'); ?>">
+          <button type="button" class="btn btn-outline-primary" style="padding: 15px;">
+            <i class="fa fa-facebook-square"  style="font-size: 70px;"></i>
+          </button>
+        </a>
+
+        <a href="<?php echo get_theme_mod('social_media_google_plus', '#'); ?>">
+          <button type="button" class="btn btn-outline-primary" style="padding: 15px;">
+            <i class="fa fa-google-plus-square"  style="font-size: 70px;"></i>
+          </button>
+        </a>
+
+        <a href="<?php echo get_theme_mod('social_media_twitter', '#'); ?>">
+          <button type="button" class="btn btn-outline-primary" style="padding: 15px;">
+            <i class="fa fa-twitter-square"  style="font-size: 70px"></i>
+          </button>
+        </a>
+
+        <a href="<?php echo  get_theme_mod('social_media_linkedin', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 15px;"><i class="fa fa-linkedin-square"  style="font-size: 70px"></i>
+        </button>
+      </a>
+
+
+      </div>
+
     </div>
-    <div class="col-4">
+    <div class="col-10">
       <form>
         <input type="text" name="name" placeholder="Name" required="required" style="padding: 10px; width: 100%"><br><br>
         <input type="text" name="emailaddress" placeholder="Email Address" size="40" required="required" style="padding: 10px; width: 100%"><br><br>
