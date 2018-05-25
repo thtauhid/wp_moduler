@@ -32,14 +32,14 @@
 
   <div class="collapse navbar-collapse" id="navbarColor01">
    <?php wp_nav_menu( array(
-	'theme_location'  => 'primary',
-	'depth'	          => 4, // 1 = no dropdowns, 2 = with dropdowns.
-	'container'       => 'div',
-	'container_class' => 'collapse navbar-collapse',
-	'container_id'    => 'bs-example-navbar-collapse-1',
-	'menu_class'      => 'navbar-nav mr-auto',
-	'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-	'walker'          => new WP_Bootstrap_Navwalker(),
+    'theme_location'  => 'primary',
+    'depth'              => 4, // 1 = no dropdowns, 2 = with dropdowns.
+    'container'       => 'div',
+  'container_class' => 'collapse navbar-collapse',
+  'container_id'    => 'bs-example-navbar-collapse-1',
+  'menu_class'      => 'navbar-nav mr-auto',
+  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+  'walker'          => new WP_Bootstrap_Navwalker(),
 ) );
 ?>
     <form class="form-inline my-2 my-lg-0">
@@ -54,26 +54,16 @@ if (isset($_POST['emailaddress'])) {
 
     $to = get_theme_mod('contact_email_to_address');
     $subject = "Contact request.";
-    $message = "$_POST['contact_textarea']";
+    $message = $_POST['contact_textarea'];
     $headers = array(
-      "From: $_POST['contactpersonname']";
+      'From: '. $_POST['contactpersonname'],
        );
 
-    // wp_mail( $to, $subject, $message );
+       wp_mail( $to, $subject, $message, $headers );
 
-    echo '<div class="alert alert-dismissible alert-success"><br>
+    echo '<div class="alert alert-dismissible alert-success">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Great!</strong> Contact request sent.
 </div>';
-} else {
-  echo '<div class="alert alert-dismissible alert-danger">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <strong>Oh no!</strong> Something stupid happened!
-</div>';
 }
-// $to = ‘steve.jobs@apple.com’;
-// $subject = ‘Apple Computer’;
-// $message = ‘Steve, I think this computer thing might really take off.’;
-
-wp_mail( $to, $subject, $message );
 ?>
