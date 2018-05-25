@@ -9,7 +9,7 @@
 
   <div class="col-4">
     <div class="card mb-4">
-     <a href="<?php the_permalink(); ?>"> <img class="img-thumbnail" src="
+     <a href="<?php the_permalink(); ?>"> <img style="height: 210px; width: 100%" class="img-thumbnail" src="
       <?php 
       if(has_post_thumbnail()) {the_post_thumbnail_url();} else{echo "http://via.placeholder.com/380x210";} ?>"></a>
        <div class="card-body">
