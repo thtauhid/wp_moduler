@@ -910,47 +910,6 @@ function moduler_customize_register_contact($wp_customize) {
 
 
 
-	//Google Maps Longitude
-	$wp_customize->add_setting('contact_google_maps_long', array(
-		'default' => __('', 'moduler'),
-		'type' => 'theme_mod',
-	));
- 
- 	$wp_customize->add_control('contact_google_maps_long', array(
-		'label' => __('Google Maps Longitude:', 'moduler'),
-		'section' => 'Contact',
-		'priority' => '1'
-	));
-
-
-	//Google Maps Latitude
-	$wp_customize->add_setting('contact_google_maps_lat', array(
-		'default' => __('', 'moduler'),
-		'type' => 'theme_mod',
-	));
-
-	$wp_customize->add_control('contact_google_maps_lat', array(
-		'label' => __('Google Maps Latitude:', 'moduler'),
-		'section' => 'Contact',
-		'priority' => '2'
-	));
-
-
-
-
-	//Google Maps API Key
-	$wp_customize->add_setting('contact_google_maps_api_key', array(
-		'default' => __('', 'moduler'),
-		'type' => 'theme_mod',
-	));
-
-	$wp_customize->add_control('contact_google_maps_api_key', array(
-		'label' => __('Google Maps API Key:', 'moduler'),
-		'section' => 'Contact',
-		'priority' => '3'
-	));
-
-
 	//Email : To address
 	$wp_customize->add_setting('contact_email_to_address', array(
 		'default' => __('', 'moduler'),
