@@ -1,7 +1,6 @@
 <?php get_header(); ?>
     </div>
   </div>
-
   <div class="row">
     <!--Blog Update-->
     <?php if(have_posts()) : ?>
