@@ -214,10 +214,10 @@
 
     </div>
     <div class="col-10">
-      <form>
-        <input type="text" name="name" placeholder="Name" required="required" style="padding: 10px; width: 100%"><br><br>
+      <form method="post">
+        <input type="text" name="contactpersonname" placeholder="Name" required="required" style="padding: 10px; width: 100%"><br><br>
         <input type="text" name="emailaddress" placeholder="Email Address" size="40" required="required" style="padding: 10px; width: 100%"><br><br>
-        <textarea placeholder="Your Message" cols="40" rows="6" style="padding: 10px; width: 100%"></textarea><br><br>
+        <textarea name="contact_textarea" placeholder="Your Message" cols="40" rows="6" style="padding: 10px; width: 100%"></textarea><br><br>
         <button type="submit" class="btn btn-outline-primary" style="padding: 10px">Submit</button><br>
       </form>
     </div>

@@ -48,3 +48,32 @@
     </form>
   </div>
 </nav>
+
+<?php
+if (isset($_POST['emailaddress'])) {
+
+    $to = get_theme_mod('contact_email_to_address');
+    $subject = "Contact request.";
+    $message = "$_POST['contact_textarea']";
+    $headers = array(
+      "From: $_POST['contactpersonname']";
+       );
+
+    // wp_mail( $to, $subject, $message );
+
+    echo '<div class="alert alert-dismissible alert-success"><br>
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Great!</strong> Contact request sent.
+</div>';
+} else {
+  echo '<div class="alert alert-dismissible alert-danger">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Oh no!</strong> Something stupid happened!
+</div>';
+}
+// $to = ‘steve.jobs@apple.com’;
+// $subject = ‘Apple Computer’;
+// $message = ‘Steve, I think this computer thing might really take off.’;
+
+wp_mail( $to, $subject, $message );
+?>
