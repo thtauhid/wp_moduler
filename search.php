@@ -5,8 +5,7 @@
   <div class="row">
     <!--Blog Update-->
     <div class="col-12">
-    	<?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
-    	<h2><p>Author: <?php echo $curauth->nickname; ?></p></h2>
+    	<h2><p>Results for: <?php echo get_search_query(); ?></p></h2>
     </div>
     <?php if(have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
