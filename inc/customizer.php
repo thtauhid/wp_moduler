@@ -763,7 +763,7 @@ function moduler_customize_register_cta($wp_customize) {
 
 	//Main Text
 	$wp_customize->add_setting('cta_main_text', array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.', 'moduler'),
+		'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
@@ -810,94 +810,6 @@ function moduler_customize_register_cta($wp_customize) {
 }
 
 add_action('customize_register', 'moduler_customize_register_cta');
-
-
-
-function moduler_customize_register_card_1($wp_customize) {
-
-
-	//registering section -> Card 1
-	$wp_customize->add_section('Card_1', array(
-		'title'	=>	__('Card 1', 'moduler'),
-		'description'	=>	__('Card 1 Options', 'moduler'),
-		'priority'	=>	'135',
-	));
-
-
-
-	//Image
-	$wp_customize->add_setting('card_1_image', array(
-		'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
-		'type' => 'theme_mod',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'card_1_image', array(
-		'label' => __('Card 01 Image:', 'moduler'),
-		'section' => 'Card_1',
-		'priority' => '1'
-	)));
-
-
-
-	//Text
-	$wp_customize->add_setting('card_1_text', array(
-		'default' => __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler'),
-		'type' => 'theme_mod',
-	));
-
-	$wp_customize->add_control('card_1_text', array(
-		'label' => __('Card 1 Text', 'moduler'),
-		'section' => 'Card_1',
-		'priority' => '2'
-	));
-
-}
-
-add_action('customize_register', 'moduler_customize_register_card_1');
-
-
-
-function moduler_customize_register_card_2($wp_customize) {
-
-
-	//registering section -> Card 2
-	$wp_customize->add_section('Card_2', array(
-		'title'	=>	__('Card 2', 'moduler'),
-		'description'	=>	__('Card 2 Options', 'moduler'),
-		'priority'	=>	'136',
-	));
-
-
-
-	//Image
-	$wp_customize->add_setting('card_2_image', array(
-		'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
-		'type' => 'theme_mod',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'card_2_image', array(
-		'label' => __('Card 02 Image:', 'moduler'),
-		'section' => 'Card_2',
-		'priority' => '1'
-	)));
-
-
-
-	//Text
-	$wp_customize->add_setting('card_2_text', array(
-		'default' => __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler'),
-		'type' => 'theme_mod',
-	));
-
-	$wp_customize->add_control('card_2_text', array(
-		'label' => __('Card 2 Text', 'moduler'),
-		'section' => 'Card_2',
-		'priority' => '2'
-	));
-
-}
-
-add_action('customize_register', 'moduler_customize_register_card_2');
 
 
 
@@ -982,6 +894,20 @@ function moduler_customize_register_contact($wp_customize) {
 		'description'	=>	__('Contact Options:', 'moduler'),
 		'priority'	=>	'138',
 	));
+
+
+	//Title
+	$wp_customize->add_setting('contact_title', array(
+		'default' => __('Contact', 'moduler'),
+		'type' => 'theme_mod',
+	));
+ 
+ 	$wp_customize->add_control('contact_title', array(
+		'label' => __('Title:', 'moduler'),
+		'section' => 'Contact',
+		'priority' => '0'
+	));
+
 
 
 	//Google Maps Longitude
