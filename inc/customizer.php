@@ -266,7 +266,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_client_1_img', array(
-			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
@@ -308,7 +308,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_client_2_img', array(
-			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
@@ -350,7 +350,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_client_3_img', array(
-			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
@@ -421,7 +421,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_team_member_1_img', array(
-			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
@@ -490,7 +490,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Twitter
-		$wp_customize->add_setting('team_member_1_twitter', array(
+		$wp_customize->add_setting('moduler_team_member_1_twitter', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -505,7 +505,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Email
-		$wp_customize->add_setting('team_member_1_email', array(
+		$wp_customize->add_setting('moduler_team_member_1_email', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -521,8 +521,8 @@ function moduler_customize_register_our_team($wp_customize) {
 		//Team member 02
 
 		//Image
-		$wp_customize->add_setting('team_member_2_img', array(
-			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+		$wp_customize->add_setting('moduler_team_member_2_img', array(
+			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
@@ -535,7 +535,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Name
-		$wp_customize->add_setting('team_member_2_name', array(
+		$wp_customize->add_setting('moduler_team_member_2_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -549,7 +549,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Designation
-		$wp_customize->add_setting('team_member_2_designation', array(
+		$wp_customize->add_setting('moduler_team_member_2_designation', array(
 			'default' => __('Web Developer', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -563,7 +563,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Text
-		$wp_customize->add_setting('team_member_2_text', array(
+		$wp_customize->add_setting('moduler_team_member_2_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -576,7 +576,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//FB
-		$wp_customize->add_setting('team_member_2_facebook', array(
+		$wp_customize->add_setting('moduler_team_member_2_facebook', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -589,7 +589,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Twitter
-		$wp_customize->add_setting('team_member_2_twitter', array(
+		$wp_customize->add_setting('moduler_team_member_2_twitter', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -604,7 +604,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Email
-		$wp_customize->add_setting('team_member_2_email', array(
+		$wp_customize->add_setting('moduler_team_member_2_email', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -619,8 +619,8 @@ function moduler_customize_register_our_team($wp_customize) {
 		//Team member 03
 
 		//Image
-		$wp_customize->add_setting('team_member_3_img', array(
-			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
+		$wp_customize->add_setting('moduler_team_member_3_img', array(
+			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
@@ -633,7 +633,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Name
-		$wp_customize->add_setting('team_member_3_name', array(
+		$wp_customize->add_setting('moduler_team_member_3_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -647,7 +647,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Designation
-		$wp_customize->add_setting('team_member_3_designation', array(
+		$wp_customize->add_setting('moduler_team_member_3_designation', array(
 			'default' => __('Web Developer', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -661,7 +661,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Text
-		$wp_customize->add_setting('team_member_3_text', array(
+		$wp_customize->add_setting('moduler_team_member_3_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -674,7 +674,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//FB
-		$wp_customize->add_setting('team_member_3_facebook', array(
+		$wp_customize->add_setting('moduler_team_member_3_facebook', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -687,7 +687,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Twitter
-		$wp_customize->add_setting('team_member_3_twitter', array(
+		$wp_customize->add_setting('moduler_team_member_3_twitter', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
@@ -702,7 +702,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//Email
-		$wp_customize->add_setting('team_member_3_email', array(
+		$wp_customize->add_setting('moduler_team_member_3_email', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));

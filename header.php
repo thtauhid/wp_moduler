@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?> >
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +7,8 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>
-                <?php bloginfo('name'); ?> |
-                <?php
-                if (is_home()) {
-                        bloginfo( 'description' );
-                } else {
-                        the_title();
-                }
-                ?>
-        </title>
-        <?php wp_head(  ); ?>
+      <?php wp_title(); ?>      
+    <?php wp_head(  ); ?>
 </head>
 <body>
 <div class="container">
@@ -25,7 +16,7 @@
     <!--Header-->
     <div class="col-12">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>"><?php bloginfo('name'); ?></a>
+  <a class="navbar-brand" href="<?php echo esc_url( home_url() ) ?>"><?php bloginfo('name'); ?></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
     <span class="navbar-toggler-icon"></span>
   </button>
