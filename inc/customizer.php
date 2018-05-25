@@ -813,19 +813,31 @@ add_action('customize_register', 'moduler_customize_register_cta');
 
 
 
+function moduler_customize_register_contact($wp_customize) {
 
-function moduler_customize_register_social_media($wp_customize) {
 
-
-	//registering section -> Social Media Links
-	$wp_customize->add_section('Social_Media', array(
-		'title'	=>	__('Social Media', 'moduler'),
-		'description'	=>	__('Social Media Links:', 'moduler'),
+	//registering section -> Contact
+	$wp_customize->add_section('Contact', array(
+		'title'	=>	__('Contact', 'moduler'),
+		'description'	=>	__('Contact Options:', 'moduler'),
 		'priority'	=>	'137',
 	));
 
 
-	//FB
+	//Title
+	$wp_customize->add_setting('contact_title', array(
+		'default' => __('Contact', 'moduler'),
+		'type' => 'theme_mod',
+	));
+ 
+ 	$wp_customize->add_control('contact_title', array(
+		'label' => __('Title:', 'moduler'),
+		'section' => 'Contact',
+		'priority' => '0'
+	));
+
+
+ 		//FB
 	$wp_customize->add_setting('social_media_fb', array(
 		'default' => __('', 'moduler'),
 		'type' => 'theme_mod',
@@ -833,7 +845,7 @@ function moduler_customize_register_social_media($wp_customize) {
 
 	$wp_customize->add_control('social_media_fb', array(
 		'label' => __('FB Page Link:', 'moduler'),
-		'section' => 'Social_Media',
+		'section' => 'Contact',
 		'priority' => '1'
 	));
 
@@ -846,7 +858,7 @@ function moduler_customize_register_social_media($wp_customize) {
 
 	$wp_customize->add_control('social_media_google_plus', array(
 		'label' => __('G+ Page Link:', 'moduler'),
-		'section' => 'Social_Media',
+		'section' => 'Contact',
 		'priority' => '2'
 	));
 
@@ -861,7 +873,7 @@ function moduler_customize_register_social_media($wp_customize) {
 
 	$wp_customize->add_control('social_media_twitter', array(
 		'label' => __('Twitter ID Link:', 'moduler'),
-		'section' => 'Social_Media',
+		'section' => 'Contact',
 		'priority' => '3'
 	));
 
@@ -874,38 +886,8 @@ function moduler_customize_register_social_media($wp_customize) {
 
 	$wp_customize->add_control('social_media_linkedin', array(
 		'label' => __('Linkedin Link:', 'moduler'),
-		'section' => 'Social_Media',
-		'priority' => '4'
-	));
-
-
-
-}
-
-add_action('customize_register', 'moduler_customize_register_social_media');
-
-
-function moduler_customize_register_contact($wp_customize) {
-
-
-	//registering section -> Contact
-	$wp_customize->add_section('Contact', array(
-		'title'	=>	__('Contact', 'moduler'),
-		'description'	=>	__('Contact Options:', 'moduler'),
-		'priority'	=>	'138',
-	));
-
-
-	//Title
-	$wp_customize->add_setting('contact_title', array(
-		'default' => __('Contact', 'moduler'),
-		'type' => 'theme_mod',
-	));
- 
- 	$wp_customize->add_control('contact_title', array(
-		'label' => __('Title:', 'moduler'),
 		'section' => 'Contact',
-		'priority' => '1'
+		'priority' => '4'
 	));
 
 
@@ -919,7 +901,7 @@ function moduler_customize_register_contact($wp_customize) {
 	$wp_customize->add_control('contact_email_to_address', array(
 		'label' => __('To email address:', 'moduler'),
 		'section' => 'Contact',
-		'priority' => '2'
+		'priority' => '5'
 	));
 
 
