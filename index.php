@@ -17,7 +17,7 @@
         <p>On <?php the_time('j F, Y') ?> by <?php the_author_posts_link(); ?> </p>
 
         <p class="card-text"><?php the_excerpt() ?></p>
-          <button type="button" class="a btn btn-outline-primary"><a href="<?php the_permalink() ?>">More >></a></button><br>
+          <button type="button" class="a btn btn-outline-primary"><a href="<?php the_permalink() ?>"><?php echo __('More >>', 'moduler') ?></a></button><br>
       </div>
     </div>
   </div>
@@ -27,15 +27,15 @@
   <div class="row">
     <div class="col-12">
       <div class="text-right">
-        <?php previous_posts_link('Newer'); ?>
+        <?php previous_posts_link(__('Newer', 'moduler')); ?>
       </div>
       <div class="text-left">
-        <?php next_posts_link('Older'); ?>
+        <?php next_posts_link(__('Older', 'moduler')); ?>
       </div>
     </div>
   </div>
         <?php else : ?>
-      <p><?php __('No Posts Found'); ?></p>
+      <p><?php __('No Posts Found', 'moduler'); ?></p>
     <?php endif; ?>
   <!-- </div> -->
   <!-- </div> -->

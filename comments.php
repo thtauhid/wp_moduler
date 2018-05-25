@@ -23,13 +23,13 @@
 
 	$comments_args = array(
 	        // change the title of send button 
-	        'label_submit'=>'Send',
+	        'label_submit'=>__('Send', 'moduler'),
 	        // change the title of the reply section
-	        'title_reply'=>'Write a Reply or Comment',
+	        'title_reply'=> __('Write a Reply or Comment', 'moduler'),
 	        // remove "Text or HTML to be displayed after the set of comment fields"
 	        'comment_notes_after' => '',
 	        // redefine your own textarea (the comment body)
-	        'comment_field' => '<p class="comment-form-comment"><label for="comment"></label><textarea id="comment" name="comment" aria-required="true" placeholder="' . __('Write your comment here...') .'" required="required" rows="4"></textarea></p>',
+	        'comment_field' => '<p class="comment-form-comment"><label for="comment"></label><textarea id="comment" name="comment" aria-required="true" placeholder="' . __('Write your comment here...', 'moduler') .'" required="required" rows="4"></textarea></p>',
 	);
 
 	comment_form($comments_args);

@@ -49,7 +49,7 @@
 <?php
 if (isset($_POST['emailaddress'])) {
 
-    $to = get_theme_mod('contact_email_to_address');
+    $to = get_theme_mod('moduler_contact_email_to_address');
     $subject = "Contact request.";
     $message = $_POST['contact_textarea'];
     $headers = array(
@@ -59,8 +59,8 @@ if (isset($_POST['emailaddress'])) {
        wp_mail( $to, $subject, $message, $headers );
 
     echo '<div class="alert alert-dismissible alert-success">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <strong>Great!</strong> Contact request sent.
-</div>';
+  <button type="button" class="close" data-dismiss="alert">&times;</button>' . 
+  __('<strong>Great!</strong> Contact request sent.', 'moduler') .
+'</div>';
 }
 ?>

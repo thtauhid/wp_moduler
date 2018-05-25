@@ -25,7 +25,7 @@
 <?php endwhile; ?>
   </div>
         <?php else : ?>
-      <p><?php __('No Posts Found'); ?></p>
+      <p><?php __('No Posts Found', 'moduler'); ?></p>
     <?php endif; ?>
   <!-- </div> -->
   <!-- </div> -->

@@ -4,7 +4,7 @@ function moduler_customize_register_header($wp_customize) {
 
 
 	//registering section -> Header
-	$wp_customize->add_section('Header', array(
+	$wp_customize->add_section('moduler_Header', array(
 		'title'	=>	__('Header', 'moduler'),
 		'description'	=>	__('Header Options', 'moduler'),
 		'priority'	=>	'130',
@@ -13,28 +13,28 @@ function moduler_customize_register_header($wp_customize) {
 
 
 	//Main Title
-	$wp_customize->add_setting('main_title', array(
+	$wp_customize->add_setting('moduler_main_title', array(
 		'default' => __('Hello, world!', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('main_title', array(
+	$wp_customize->add_control('moduler_main_title', array(
 		'label' => __('Title', 'moduler'),
-		'section' => 'Header',
+		'section' => 'moduler_Header',
 		'priority' => '1'
 	));
 
 
 
 	//Below Title
-	$wp_customize->add_setting('below_title', array(
+	$wp_customize->add_setting('moduler_below_title', array(
 		'default' => __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('below_title', array(
+	$wp_customize->add_control('moduler_below_title', array(
 		'label' => __('Below title', 'moduler'),
-		'section' => 'Header',
+		'section' => 'moduler_Header',
 		'priority' => '2'
 	));
 
@@ -43,14 +43,14 @@ function moduler_customize_register_header($wp_customize) {
 
 
 	//Main Text
-	$wp_customize->add_setting('main_text', array(
+	$wp_customize->add_setting('moduler_main_text', array(
 		'default' => __('It uses utility classes for typography and spacing to space content out within the larger container.', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('main_text', array(
+	$wp_customize->add_control('moduler_main_text', array(
 		'label' => __('Main Text', 'moduler'),
-		'section' => 'Header',
+		'section' => 'moduler_Header',
 		'priority' => '3'
 	));
 
@@ -60,14 +60,14 @@ function moduler_customize_register_header($wp_customize) {
 
 
 	//Button Text
-	$wp_customize->add_setting('button_text', array(
+	$wp_customize->add_setting('moduler_button_text', array(
 		'default' => __('Learn more', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('button_text', array(
+	$wp_customize->add_control('moduler_button_text', array(
 		'label' => __('Button Text', 'moduler'),
-		'section' => 'Header',
+		'section' => 'moduler_Header',
 		'priority' => '4'
 	));
 
@@ -77,14 +77,14 @@ function moduler_customize_register_header($wp_customize) {
 
 
 	//Button URL
-	$wp_customize->add_setting('button_url', array(
+	$wp_customize->add_setting('moduler_button_url', array(
 		'default' => __('#', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('button_url', array(
+	$wp_customize->add_control('moduler_button_url', array(
 		'label' => __('Button URL', 'moduler'),
-		'section' => 'Header',
+		'section' => 'moduler_Header',
 		'priority' => '5'
 	));
 
@@ -96,7 +96,7 @@ function moduler_customize_register_expertise($wp_customize) {
 
 
 	//registering section -> Expertise
-	$wp_customize->add_section('Expertise', array(
+	$wp_customize->add_section('moduler_Expertise', array(
 		'title'	=>	__('Expertise', 'moduler'),
 		'description'	=>	__('Expertise Options', 'moduler'),
 		'priority'	=>	'131',
@@ -105,41 +105,41 @@ function moduler_customize_register_expertise($wp_customize) {
 
 
 	//Title
-	$wp_customize->add_setting('expertise_main_title', array(
+	$wp_customize->add_setting('moduler_expertise_main_title', array(
 		'default' => __('Our Expertise', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_main_title', array(
+	$wp_customize->add_control('moduler_expertise_main_title', array(
 		'label' => __('Title', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '1'
 	));
 
 
 	//First Element Name:
-	$wp_customize->add_setting('expertise_1st_element', array(
+	$wp_customize->add_setting('moduler_expertise_1st_element', array(
 		'default' => __('HTML & CSS:', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_1st_element', array(
+	$wp_customize->add_control('moduler_expertise_1st_element', array(
 		'label' => __('First Element Name:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '2'
 	));
 
 
 
 	//First Element Percentage:
-	$wp_customize->add_setting('expertise_1st_element_persentage', array(
-		'default' => __('60', 'moduler'),
+	$wp_customize->add_setting('moduler_expertise_1st_element_persentage', array(
+		'default' => '60',
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_1st_element_persentage', array(
+	$wp_customize->add_control('moduler_expertise_1st_element_persentage', array(
 		'label' => __('First Element Percentage:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '3'
 	));
 
@@ -147,14 +147,14 @@ function moduler_customize_register_expertise($wp_customize) {
 
 
 	//Second Element Name:
-	$wp_customize->add_setting('expertise_2nd_element', array(
+	$wp_customize->add_setting('moduler_expertise_2nd_element', array(
 		'default' => __('Bootstrap:', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_2nd_element', array(
+	$wp_customize->add_control('moduler_expertise_2nd_element', array(
 		'label' => __('Second Element Name:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '4'
 	));
 
@@ -162,14 +162,14 @@ function moduler_customize_register_expertise($wp_customize) {
 
 
 	//Second Element Percentage:
-	$wp_customize->add_setting('expertise_2nd_element_persentage', array(
-		'default' => __('70', 'moduler'),
+	$wp_customize->add_setting('moduler_expertise_2nd_element_persentage', array(
+		'default' => '70',
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_2nd_element_persentage', array(
+	$wp_customize->add_control('moduler_expertise_2nd_element_persentage', array(
 		'label' => __('Second Element Percentage:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '5'
 	));
 
@@ -177,56 +177,56 @@ function moduler_customize_register_expertise($wp_customize) {
 
 
 	//Third Element Name:
-	$wp_customize->add_setting('expertise_3rd_element', array(
+	$wp_customize->add_setting('moduler_expertise_3rd_element', array(
 		'default' => __('PHP:', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_3rd_element', array(
+	$wp_customize->add_control('moduler_expertise_3rd_element', array(
 		'label' => __('Third Element Name:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '6'
 	));
 
 
 
 	//Third Element Percentage:
-	$wp_customize->add_setting('expertise_3rd_element_persentage', array(
-		'default' => __('80', 'moduler'),
+	$wp_customize->add_setting('moduler_expertise_3rd_element_persentage', array(
+		'default' => '80',
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_3rd_element_persentage', array(
+	$wp_customize->add_control('moduler_expertise_3rd_element_persentage', array(
 		'label' => __('Third Element Percentage:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '7'
 	));
 
 
 
 	//Fourth Element Name:
-	$wp_customize->add_setting('expertise_4th_element', array(
+	$wp_customize->add_setting('moduler_expertise_4th_element', array(
 		'default' => __('Photoshop:', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_4th_element', array(
+	$wp_customize->add_control('moduler_expertise_4th_element', array(
 		'label' => __('Fourth Element Name:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '8'
 	));
 
 
 
 	//Fourth Element Percentage:
-	$wp_customize->add_setting('expertise_4th_element_persentage', array(
-		'default' => __('90', 'moduler'),
+	$wp_customize->add_setting('moduler_expertise_4th_element_persentage', array(
+		'default' => '90',
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('expertise_4th_element_persentage', array(
+	$wp_customize->add_control('moduler_expertise_4th_element_persentage', array(
 		'label' => __('Fourth Element Percentage:', 'moduler'),
-		'section' => 'Expertise',
+		'section' => 'moduler_Expertise',
 		'priority' => '9'
 	));
 
@@ -241,7 +241,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 
 	//registering section -> Client Area
-	$wp_customize->add_section('Client', array(
+	$wp_customize->add_section('moduler_Client', array(
 		'title'	=>	__('Client Area', 'moduler'),
 		'description'	=>	__('Client Area Options', 'moduler'),
 		'priority'	=>	'132',
@@ -250,14 +250,14 @@ function moduler_customize_register_client_area($wp_customize) {
 
 
 	//Title
-	$wp_customize->add_setting('client_main_title', array(
+	$wp_customize->add_setting('moduler_client_main_title', array(
 		'default' => __('What Our Clients Say', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('client_main_title', array(
+	$wp_customize->add_control('moduler_client_main_title', array(
 		'label' => __('Title', 'moduler'),
-		'section' => 'Client',
+		'section' => 'moduler_Client',
 		'priority' => '1'
 	));
 
@@ -265,40 +265,40 @@ function moduler_customize_register_client_area($wp_customize) {
 	//Client 01
 
 		//Image
-		$wp_customize->add_setting('client_1_img', array(
+		$wp_customize->add_setting('moduler_client_1_img', array(
 			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'client_1_img', array(
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_client_1_img', array(
 			'label' => __('Client 01 Image:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '2'
 		)));
 
 
 
 		//Name
-		$wp_customize->add_setting('client_1_name', array(
+		$wp_customize->add_setting('moduler_client_1_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('client_1_name', array(
+		$wp_customize->add_control('moduler_client_1_name', array(
 			'label' => __('Client 01 Name:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '3'
 		));
 
 		//Text
-		$wp_customize->add_setting('client_1_text', array(
+		$wp_customize->add_setting('moduler_client_1_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('client_1_text', array(
+		$wp_customize->add_control('moduler_client_1_text', array(
 			'label' => __('Client 01 Text:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '4'
 		));
 
@@ -307,40 +307,40 @@ function moduler_customize_register_client_area($wp_customize) {
 	//Client 02
 
 		//Image
-		$wp_customize->add_setting('client_2_img', array(
+		$wp_customize->add_setting('moduler_client_2_img', array(
 			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'client_2_img', array(
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_client_2_img', array(
 			'label' => __('Client 02 Image:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '5'
 		)));
 
 
 
 		//Name
-		$wp_customize->add_setting('client_2_name', array(
+		$wp_customize->add_setting('moduler_client_2_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('client_2_name', array(
+		$wp_customize->add_control('moduler_client_2_name', array(
 			'label' => __('Client 02 Name:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '6'
 		));
 
 		//Text
-		$wp_customize->add_setting('client_2_text', array(
+		$wp_customize->add_setting('moduler_client_2_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('client_2_text', array(
+		$wp_customize->add_control('moduler_client_2_text', array(
 			'label' => __('Client 02 Text:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '7'
 		));
 
@@ -349,40 +349,40 @@ function moduler_customize_register_client_area($wp_customize) {
 	//Client 03
 
 		//Image
-		$wp_customize->add_setting('client_3_img', array(
+		$wp_customize->add_setting('moduler_client_3_img', array(
 			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'client_3_img', array(
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_client_3_img', array(
 			'label' => __('Client 03 Image:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '8'
 		)));
 
 
 
 		//Name
-		$wp_customize->add_setting('client_3_name', array(
+		$wp_customize->add_setting('moduler_client_3_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('client_3_name', array(
+		$wp_customize->add_control('moduler_client_3_name', array(
 			'label' => __('Client 03 Name:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '9'
 		));
 
 		//Text
-		$wp_customize->add_setting('client_3_text', array(
+		$wp_customize->add_setting('moduler_client_3_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('client_3_text', array(
+		$wp_customize->add_control('moduler_client_3_text', array(
 			'label' => __('Client 03 Text:', 'moduler'),
-			'section' => 'Client',
+			'section' => 'moduler_Client',
 			'priority' => '10'
 		));
 
@@ -396,7 +396,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 	//registering section -> Our Team
-	$wp_customize->add_section('Team', array(
+	$wp_customize->add_section('moduler_Team', array(
 		'title'	=>	__('Our Team', 'moduler'),
 		'description'	=>	__('Our Team Options', 'moduler'),
 		'priority'	=>	'133',
@@ -405,14 +405,14 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 	//Title
-	$wp_customize->add_setting('our_team_main_title', array(
+	$wp_customize->add_setting('moduler_our_team_main_title', array(
 		'default' => __('Our Awesome Team', 'moduler'),
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('our_team_main_title', array(
+	$wp_customize->add_control('moduler_our_team_main_title', array(
 		'label' => __('Title', 'moduler'),
-		'section' => 'Team',
+		'section' => 'moduler_Team',
 		'priority' => '1'
 	));
 
@@ -420,54 +420,54 @@ function moduler_customize_register_our_team($wp_customize) {
 	//Team member 01
 
 		//Image
-		$wp_customize->add_setting('team_member_1_img', array(
+		$wp_customize->add_setting('moduler_team_member_1_img', array(
 			'default' => get_bloginfo('template_directory'). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'team_member_1_img', array(
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_team_member_1_img', array(
 			'label' => __('Team Memmber 01 Image:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '2'
 		)));
 
 
 
 		//Name
-		$wp_customize->add_setting('team_member_1_name', array(
+		$wp_customize->add_setting('moduler_team_member_1_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_1_name', array(
+		$wp_customize->add_control('moduler_team_member_1_name', array(
 			'label' => __('Team Member 01 Name:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '3'
 		));
 
 
 
 		//Designation
-		$wp_customize->add_setting('team_member_1_designation', array(
+		$wp_customize->add_setting('moduler_team_member_1_designation', array(
 			'default' => __('Web Developer', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_1_designation', array(
+		$wp_customize->add_control('moduler_team_member_1_designation', array(
 			'label' => __('Team Member 01 Designation:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '4'
 		));
 
 
 
 		//Text
-		$wp_customize->add_setting('team_member_1_text', array(
+		$wp_customize->add_setting('moduler_team_member_1_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_1_text', array(
+		$wp_customize->add_control('moduler_team_member_1_text', array(
 			'label' => __('Team Member 01 Text:', 'moduler'),
 			'section' => 'Team',
 			'priority' => '5'
@@ -475,16 +475,18 @@ function moduler_customize_register_our_team($wp_customize) {
 
 
 		//FB
-		$wp_customize->add_setting('team_member_1_facebook', array(
+		$wp_customize->add_setting('moduler_team_member_1_facebook', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_1_facebook', array(
+		$wp_customize->add_control('moduler_team_member_1_facebook', array(
 			'label' => __('Team Member 01 FB ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '6'
 		));
+
+
 
 
 		//Twitter
@@ -493,9 +495,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_1_twitter', array(
+		$wp_customize->add_control('moduler_team_member_1_twitter', array(
 			'label' => __('Team Member 01 Twitter ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '7'
 		));
 
@@ -508,9 +510,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_1_email', array(
+		$wp_customize->add_control('moduler_team_member_1_email', array(
 			'label' => __('Team Member 01 Email ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '8'
 		));
 
@@ -524,9 +526,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'team_member_2_img', array(
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_team_member_2_img', array(
 			'label' => __('Team Memmber 02 Image:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '9'
 		)));
 
@@ -538,9 +540,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_2_name', array(
+		$wp_customize->add_control('moduler_team_member_2_name', array(
 			'label' => __('Team Member 02 Name:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '10'
 		));
 
@@ -552,9 +554,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_2_designation', array(
+		$wp_customize->add_control('moduler_team_member_2_designation', array(
 			'label' => __('Team Member 02 Designation:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '11'
 		));
 
@@ -566,9 +568,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_2_text', array(
+		$wp_customize->add_control('moduler_team_member_2_text', array(
 			'label' => __('Team Member 02 Text:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '12'
 		));
 
@@ -579,9 +581,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_2_facebook', array(
+		$wp_customize->add_control('moduler_team_member_2_facebook', array(
 			'label' => __('Team Member 02 FB ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '13'
 		));
 
@@ -592,9 +594,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_2_twitter', array(
+		$wp_customize->add_control('moduler_team_member_2_twitter', array(
 			'label' => __('Team Member 02 Twitter ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '14'
 		));
 
@@ -607,9 +609,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_2_email', array(
+		$wp_customize->add_control('moduler_team_member_2_email', array(
 			'label' => __('Team Member 02 Email ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '15'
 		));
 
@@ -622,9 +624,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'team_member_3_img', array(
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_team_member_3_img', array(
 			'label' => __('Team Memmber 03 Image:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '16'
 		)));
 
@@ -636,9 +638,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_3_name', array(
+		$wp_customize->add_control('moduler_team_member_3_name', array(
 			'label' => __('Team Member 03 Name:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '17'
 		));
 
@@ -650,9 +652,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_3_designation', array(
+		$wp_customize->add_control('moduler_team_member_3_designation', array(
 			'label' => __('Team Member 03 Designation:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '18'
 		));
 
@@ -664,9 +666,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_3_text', array(
+		$wp_customize->add_control('moduler_team_member_3_text', array(
 			'label' => __('Team Member 03 Text:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '19'
 		));
 
@@ -677,9 +679,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_3_facebook', array(
+		$wp_customize->add_control('moduler_team_member_3_facebook', array(
 			'label' => __('Team Member 03 FB ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '20'
 		));
 
@@ -690,9 +692,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_3_twitter', array(
+		$wp_customize->add_control('moduler_team_member_3_twitter', array(
 			'label' => __('Team Member 03 Twitter ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '21'
 		));
 
@@ -705,9 +707,9 @@ function moduler_customize_register_our_team($wp_customize) {
 			'type' => 'theme_mod',
 		));
 
-		$wp_customize->add_control('team_member_3_email', array(
+		$wp_customize->add_control('moduler_team_member_3_email', array(
 			'label' => __('Team Member 03 Email ID:', 'moduler'),
-			'section' => 'Team',
+			'section' => 'moduler_Team',
 			'priority' => '22'
 		));
 }
@@ -737,9 +739,9 @@ function moduler_customize_register_cta($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('cta_title', array(
+	$wp_customize->add_control('moduler_cta_title', array(
 		'label' => __('Title', 'moduler'),
-		'section' => 'CTA',
+		'section' => 'moduler_CTA',
 		'priority' => '1'
 	));
 
@@ -751,9 +753,9 @@ function moduler_customize_register_cta($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('cta_sub_title', array(
+	$wp_customize->add_control('moduler_cta_sub_title', array(
 		'label' => __('CTA Sub Title', 'moduler'),
-		'section' => 'CTA',
+		'section' => 'moduler_CTA',
 		'priority' => '2'
 	));
 
@@ -767,9 +769,9 @@ function moduler_customize_register_cta($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('cta_main_text', array(
+	$wp_customize->add_control('moduler_cta_main_text', array(
 		'label' => __('Main Text', 'moduler'),
-		'section' => 'CTA',
+		'section' => 'moduler_CTA',
 		'priority' => '3'
 	));
 
@@ -784,9 +786,9 @@ function moduler_customize_register_cta($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('cta_button_text', array(
+	$wp_customize->add_control('moduler_cta_button_text', array(
 		'label' => __('Button Text', 'moduler'),
-		'section' => 'CTA',
+		'section' => 'moduler_CTA',
 		'priority' => '4'
 	));
 
@@ -801,9 +803,9 @@ function moduler_customize_register_cta($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('cta_button_url', array(
+	$wp_customize->add_control('moduler_cta_button_url', array(
 		'label' => __('Button URL', 'moduler'),
-		'section' => 'CTA',
+		'section' => 'moduler_CTA',
 		'priority' => '5'
 	));
 
@@ -830,9 +832,9 @@ function moduler_customize_register_contact($wp_customize) {
 		'type' => 'theme_mod',
 	));
  
- 	$wp_customize->add_control('contact_title', array(
+ 	$wp_customize->add_control('moduler_contact_title', array(
 		'label' => __('Title:', 'moduler'),
-		'section' => 'Contact',
+		'section' => 'moduler_Contact',
 		'priority' => '0'
 	));
 
@@ -843,9 +845,9 @@ function moduler_customize_register_contact($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('social_media_fb', array(
+	$wp_customize->add_control('moduler_social_media_fb', array(
 		'label' => __('FB Page Link:', 'moduler'),
-		'section' => 'Contact',
+		'section' => 'moduler_Contact',
 		'priority' => '1'
 	));
 
@@ -856,9 +858,9 @@ function moduler_customize_register_contact($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('social_media_google_plus', array(
+	$wp_customize->add_control('moduler_social_media_google_plus', array(
 		'label' => __('G+ Page Link:', 'moduler'),
-		'section' => 'Contact',
+		'section' => 'moduler_Contact',
 		'priority' => '2'
 	));
 
@@ -871,9 +873,9 @@ function moduler_customize_register_contact($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('social_media_twitter', array(
+	$wp_customize->add_control('moduler_social_media_twitter', array(
 		'label' => __('Twitter ID Link:', 'moduler'),
-		'section' => 'Contact',
+		'section' => 'moduler_Contact',
 		'priority' => '3'
 	));
 
@@ -884,9 +886,9 @@ function moduler_customize_register_contact($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('social_media_linkedin', array(
+	$wp_customize->add_control('moduler_social_media_linkedin', array(
 		'label' => __('Linkedin Link:', 'moduler'),
-		'section' => 'Contact',
+		'section' => 'moduler_Contact',
 		'priority' => '4'
 	));
 
@@ -898,9 +900,9 @@ function moduler_customize_register_contact($wp_customize) {
 		'type' => 'theme_mod',
 	));
 
-	$wp_customize->add_control('contact_email_to_address', array(
+	$wp_customize->add_control('moduler_contact_email_to_address', array(
 		'label' => __('To email address:', 'moduler'),
-		'section' => 'Contact',
+		'section' => 'moduler_Contact',
 		'priority' => '5'
 	));
 
