@@ -23,6 +23,17 @@
   </div>
 <?php endwhile; ?>
   </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="text-right">
+        <?php previous_posts_link('Newer'); ?>
+      </div>
+      <div class="text-left">
+        <?php next_posts_link('Older'); ?>
+      </div>
+    </div>
+  </div>
         <?php else : ?>
       <p><?php __('No Posts Found'); ?></p>
     <?php endif; ?>
