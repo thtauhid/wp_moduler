@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <?php wp_title(); ?>      
-    <?php wp_head(  ); ?>
+      <?php //wp_title(); ?>      
+    <?php wp_head(); ?>
 </head>
 <body>
 <div class="container">
