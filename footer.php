@@ -10,6 +10,6 @@
 </div>
   <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/bootstrap.js"></script>
   <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/jquery-3.2.1.min.js"></script>
-  <?php wp_footer(  ); ?>
+  <?php wp_footer(); ?>
 </body>
 </html>
