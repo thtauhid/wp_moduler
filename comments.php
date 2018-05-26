@@ -1,27 +1,21 @@
 <div class="col-12">
 <div class="card card-body">
-	<?php $args = array(
-	'walker'            => null,
-	'max_depth'         => '',
-	'style'             => 'ol',
-	'callback'          => null,
-	'end-callback'      => null,
-	'type'              => 'all',
-	'reply_text'        => 'Reply',
-	'page'              => '',
-	'per_page'          => '',
-	'avatar_size'       => 80,
-	'reverse_top_level' => null,
-	'reverse_children'  => '',
-	'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
-	'short_ping'        => false,   // @since 3.6
-	'echo'              => true     // boolean, default is true
-	); ?>
+	<?php wp_list_comments(); ?>
 
-	<?php
-	wp_list_comments($args, $comments);
+		<?php if( previous_comments_link() ) : ?>
+		  <li class="previous">
+		    <?php previous_comments_link( __( '&larr; Older Comments', '' ) ); ?>
+		  </li>
+		<?php endif; ?>
 
-	$comments_args = array(
+		<?php if( next_comments_link() ) : ?>
+		  <li class="next">
+		    <?php next_comments_link( __( '&larr; Newer Comments', '' ) ); ?>
+		  </li>
+		<?php endif; ?>
+			
+	
+	<?php $comments_args = array(
 	        // change the title of send button 
 	        'label_submit'=>__('Send', 'moduler'),
 	        // change the title of the reply section
@@ -34,7 +28,7 @@
 
 	comment_form($comments_args);
 
-
 	?>
+	 <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 </div>
 </div>

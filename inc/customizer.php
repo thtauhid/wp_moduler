@@ -16,12 +16,13 @@ function moduler_customize_register_header($wp_customize) {
 	$wp_customize->add_setting('moduler_main_title', array(
 		'default' => __('Hello, world!', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_Header',
 	));
 
 	$wp_customize->add_control('moduler_main_title', array(
 		'label' => __('Title', 'moduler'),
 		'section' => 'moduler_Header',
-		'priority' => '1'
+		'priority' => '1',
 	));
 
 
@@ -30,6 +31,7 @@ function moduler_customize_register_header($wp_customize) {
 	$wp_customize->add_setting('moduler_below_title', array(
 		'default' => __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_below_title',
 	));
 
 	$wp_customize->add_control('moduler_below_title', array(
@@ -46,6 +48,7 @@ function moduler_customize_register_header($wp_customize) {
 	$wp_customize->add_setting('moduler_main_text', array(
 		'default' => __('It uses utility classes for typography and spacing to space content out within the larger container.', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_main_text',
 	));
 
 	$wp_customize->add_control('moduler_main_text', array(
@@ -63,6 +66,7 @@ function moduler_customize_register_header($wp_customize) {
 	$wp_customize->add_setting('moduler_button_text', array(
 		'default' => __('Learn more', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_button_text',
 	));
 
 	$wp_customize->add_control('moduler_button_text', array(
@@ -80,6 +84,7 @@ function moduler_customize_register_header($wp_customize) {
 	$wp_customize->add_setting('moduler_button_url', array(
 		'default' => __('#', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_button_url',
 	));
 
 	$wp_customize->add_control('moduler_button_url', array(
@@ -108,6 +113,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_main_title', array(
 		'default' => __('Our Expertise', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_main_title',
 	));
 
 	$wp_customize->add_control('moduler_expertise_main_title', array(
@@ -121,6 +127,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_1st_element', array(
 		'default' => __('HTML & CSS:', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_1st_element',
 	));
 
 	$wp_customize->add_control('moduler_expertise_1st_element', array(
@@ -135,6 +142,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_1st_element_persentage', array(
 		'default' => '60',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_1st_element_persentage',
 	));
 
 	$wp_customize->add_control('moduler_expertise_1st_element_persentage', array(
@@ -150,6 +158,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_2nd_element', array(
 		'default' => __('Bootstrap:', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_2nd_element',
 	));
 
 	$wp_customize->add_control('moduler_expertise_2nd_element', array(
@@ -165,6 +174,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_2nd_element_persentage', array(
 		'default' => '70',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_2nd_element_persentage',
 	));
 
 	$wp_customize->add_control('moduler_expertise_2nd_element_persentage', array(
@@ -180,6 +190,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_3rd_element', array(
 		'default' => __('PHP:', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_3rd_element',
 	));
 
 	$wp_customize->add_control('moduler_expertise_3rd_element', array(
@@ -194,6 +205,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_3rd_element_persentage', array(
 		'default' => '80',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_3rd_element_persentage',
 	));
 
 	$wp_customize->add_control('moduler_expertise_3rd_element_persentage', array(
@@ -208,6 +220,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_4th_element', array(
 		'default' => __('Photoshop:', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_4th_element',
 	));
 
 	$wp_customize->add_control('moduler_expertise_4th_element', array(
@@ -222,6 +235,7 @@ function moduler_customize_register_expertise($wp_customize) {
 	$wp_customize->add_setting('moduler_expertise_4th_element_persentage', array(
 		'default' => '90',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_expertise_4th_element_persentage',
 	));
 
 	$wp_customize->add_control('moduler_expertise_4th_element_persentage', array(
@@ -253,6 +267,7 @@ function moduler_customize_register_client_area($wp_customize) {
 	$wp_customize->add_setting('moduler_client_main_title', array(
 		'default' => __('What Our Clients Say', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_main_title',
 	));
 
 	$wp_customize->add_control('moduler_client_main_title', array(
@@ -268,6 +283,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_1_img', array(
 			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_1_img',
 		));
 
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_client_1_img', array(
@@ -282,6 +298,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_1_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_1_name',
 		));
 
 		$wp_customize->add_control('moduler_client_1_name', array(
@@ -294,6 +311,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_1_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_1_text',
 		));
 
 		$wp_customize->add_control('moduler_client_1_text', array(
@@ -310,6 +328,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_2_img', array(
 			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_2_img',
 		));
 
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_client_2_img', array(
@@ -324,6 +343,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_2_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_2_name',
 		));
 
 		$wp_customize->add_control('moduler_client_2_name', array(
@@ -336,6 +356,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_2_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_2_text',
 		));
 
 		$wp_customize->add_control('moduler_client_2_text', array(
@@ -352,6 +373,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_3_img', array(
 			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_3_img',
 		));
 
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_client_3_img', array(
@@ -366,6 +388,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_3_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_3_name',
 		));
 
 		$wp_customize->add_control('moduler_client_3_name', array(
@@ -378,6 +401,7 @@ function moduler_customize_register_client_area($wp_customize) {
 		$wp_customize->add_setting('moduler_client_3_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_client_3_text',
 		));
 
 		$wp_customize->add_control('moduler_client_3_text', array(
@@ -408,6 +432,7 @@ function moduler_customize_register_our_team($wp_customize) {
 	$wp_customize->add_setting('moduler_our_team_main_title', array(
 		'default' => __('Our Awesome Team', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_our_team_main_title',
 	));
 
 	$wp_customize->add_control('moduler_our_team_main_title', array(
@@ -423,6 +448,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_1_img', array(
 			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_1_img',
 		));
 
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_team_member_1_img', array(
@@ -437,6 +463,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_1_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_1_name',
 		));
 
 		$wp_customize->add_control('moduler_team_member_1_name', array(
@@ -451,6 +478,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_1_designation', array(
 			'default' => __('Web Developer', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_1_designation',
 		));
 
 		$wp_customize->add_control('moduler_team_member_1_designation', array(
@@ -465,6 +493,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_1_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_1_text',
 		));
 
 		$wp_customize->add_control('moduler_team_member_1_text', array(
@@ -478,6 +507,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_1_facebook', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_1_facebook',
 		));
 
 		$wp_customize->add_control('moduler_team_member_1_facebook', array(
@@ -493,6 +523,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_1_twitter', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_1_twitter',
 		));
 
 		$wp_customize->add_control('moduler_team_member_1_twitter', array(
@@ -508,6 +539,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_1_email', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_1_email',
 		));
 
 		$wp_customize->add_control('moduler_team_member_1_email', array(
@@ -524,6 +556,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_2_img', array(
 			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_2_img',
 		));
 
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_team_member_2_img', array(
@@ -538,6 +571,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_2_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_2_name',
 		));
 
 		$wp_customize->add_control('moduler_team_member_2_name', array(
@@ -552,6 +586,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_2_designation', array(
 			'default' => __('Web Developer', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_2_designation',
 		));
 
 		$wp_customize->add_control('moduler_team_member_2_designation', array(
@@ -566,6 +601,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_2_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_2_text',
 		));
 
 		$wp_customize->add_control('moduler_team_member_2_text', array(
@@ -579,6 +615,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_2_facebook', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_2_facebook',
 		));
 
 		$wp_customize->add_control('moduler_team_member_2_facebook', array(
@@ -592,6 +629,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_2_twitter', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_2_twitter',
 		));
 
 		$wp_customize->add_control('moduler_team_member_2_twitter', array(
@@ -607,6 +645,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_2_email', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_2_email',
 		));
 
 		$wp_customize->add_control('moduler_team_member_2_email', array(
@@ -622,6 +661,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_3_img', array(
 			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_3_img',
 		));
 
 		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'moduler_team_member_3_img', array(
@@ -636,6 +676,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_3_name', array(
 			'default' => __('Tasnimul H. Tauhid', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_3_name',
 		));
 
 		$wp_customize->add_control('moduler_team_member_3_name', array(
@@ -650,6 +691,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_3_designation', array(
 			'default' => __('Web Developer', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_3_designation',
 		));
 
 		$wp_customize->add_control('moduler_team_member_3_designation', array(
@@ -664,6 +706,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_3_text', array(
 			'default' => __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_3_text',
 		));
 
 		$wp_customize->add_control('moduler_team_member_3_text', array(
@@ -677,6 +720,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_3_facebook', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_3_facebook',
 		));
 
 		$wp_customize->add_control('moduler_team_member_3_facebook', array(
@@ -690,6 +734,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_3_twitter', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_3_twitter',
 		));
 
 		$wp_customize->add_control('moduler_team_member_3_twitter', array(
@@ -705,6 +750,7 @@ function moduler_customize_register_our_team($wp_customize) {
 		$wp_customize->add_setting('moduler_team_member_3_email', array(
 			'default' => __('', 'moduler'),
 			'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_team_member_3_email',
 		));
 
 		$wp_customize->add_control('moduler_team_member_3_email', array(
@@ -725,7 +771,7 @@ function moduler_customize_register_cta($wp_customize) {
 
 
 	//registering section -> CTA
-	$wp_customize->add_section('CTA', array(
+	$wp_customize->add_section('moduler_CTA', array(
 		'title'	=>	__('CTA', 'moduler'),
 		'description'	=>	__('CTA Options', 'moduler'),
 		'priority'	=>	'134',
@@ -734,9 +780,10 @@ function moduler_customize_register_cta($wp_customize) {
 
 
 	//Title
-	$wp_customize->add_setting('cta_title', array(
+	$wp_customize->add_setting('moduler_cta_title', array(
 		'default' => __('The Call To Action Button', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_cta_title',
 	));
 
 	$wp_customize->add_control('moduler_cta_title', array(
@@ -748,9 +795,10 @@ function moduler_customize_register_cta($wp_customize) {
 
 
 	//Sub Title
-	$wp_customize->add_setting('cta_sub_title', array(
+	$wp_customize->add_setting('moduler_cta_sub_title', array(
 		'default' => __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_cta_sub_title',
 	));
 
 	$wp_customize->add_control('moduler_cta_sub_title', array(
@@ -764,9 +812,10 @@ function moduler_customize_register_cta($wp_customize) {
 
 
 	//Main Text
-	$wp_customize->add_setting('cta_main_text', array(
+	$wp_customize->add_setting('moduler_cta_main_text', array(
 		'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_cta_main_text',
 	));
 
 	$wp_customize->add_control('moduler_cta_main_text', array(
@@ -781,9 +830,10 @@ function moduler_customize_register_cta($wp_customize) {
 
 
 	//Button Text
-	$wp_customize->add_setting('cta_button_text', array(
+	$wp_customize->add_setting('moduler_cta_button_text', array(
 		'default' => __('Check out', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_cta_button_text',
 	));
 
 	$wp_customize->add_control('moduler_cta_button_text', array(
@@ -798,9 +848,10 @@ function moduler_customize_register_cta($wp_customize) {
 
 
 	//Button URL
-	$wp_customize->add_setting('cta_button_url', array(
+	$wp_customize->add_setting('moduler_cta_button_url', array(
 		'default' => __('#', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_cta_button_url',
 	));
 
 	$wp_customize->add_control('moduler_cta_button_url', array(
@@ -819,7 +870,7 @@ function moduler_customize_register_contact($wp_customize) {
 
 
 	//registering section -> Contact
-	$wp_customize->add_section('Contact', array(
+	$wp_customize->add_section('moduler_Contact', array(
 		'title'	=>	__('Contact', 'moduler'),
 		'description'	=>	__('Contact Options:', 'moduler'),
 		'priority'	=>	'137',
@@ -827,9 +878,10 @@ function moduler_customize_register_contact($wp_customize) {
 
 
 	//Title
-	$wp_customize->add_setting('contact_title', array(
+	$wp_customize->add_setting('moduler_contact_title', array(
 		'default' => __('Contact', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_contact_title',
 	));
  
  	$wp_customize->add_control('moduler_contact_title', array(
@@ -840,9 +892,10 @@ function moduler_customize_register_contact($wp_customize) {
 
 
  		//FB
-	$wp_customize->add_setting('social_media_fb', array(
+	$wp_customize->add_setting('moduler_social_media_fb', array(
 		'default' => __('', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_social_media_fb',
 	));
 
 	$wp_customize->add_control('moduler_social_media_fb', array(
@@ -853,9 +906,10 @@ function moduler_customize_register_contact($wp_customize) {
 
 
 	//Google+
-	$wp_customize->add_setting('social_media_google_plus', array(
+	$wp_customize->add_setting('moduler_social_media_google_plus', array(
 		'default' => __('', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_social_media_google_plus',
 	));
 
 	$wp_customize->add_control('moduler_social_media_google_plus', array(
@@ -868,9 +922,10 @@ function moduler_customize_register_contact($wp_customize) {
 
 
 	//Twitter
-	$wp_customize->add_setting('social_media_twitter', array(
+	$wp_customize->add_setting('moduler_social_media_twitter', array(
 		'default' => __('', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_social_media_twitter',
 	));
 
 	$wp_customize->add_control('moduler_social_media_twitter', array(
@@ -881,9 +936,10 @@ function moduler_customize_register_contact($wp_customize) {
 
 
 	//Linkedin
-	$wp_customize->add_setting('social_media_linkedin', array(
+	$wp_customize->add_setting('moduler_social_media_linkedin', array(
 		'default' => __('', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_social_media_linkedin',
 	));
 
 	$wp_customize->add_control('moduler_social_media_linkedin', array(
@@ -895,9 +951,10 @@ function moduler_customize_register_contact($wp_customize) {
 
 
 	//Email : To address
-	$wp_customize->add_setting('contact_email_to_address', array(
+	$wp_customize->add_setting('moduler_contact_email_to_address', array(
 		'default' => __('', 'moduler'),
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'sanitize_moduler_contact_email_to_address',
 	));
 
 	$wp_customize->add_control('moduler_contact_email_to_address', array(

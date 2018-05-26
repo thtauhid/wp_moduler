@@ -7,7 +7,6 @@
     <?php if(have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
 
-
   <div class="col-12">
     <div class="card mb-4">
       <img class="img-thumbnail" src="
@@ -17,10 +16,28 @@
       <div class="card-body">
         <h2 class="card-title"><?php the_title() ?></h2>
         <p><?php echo __('On ', 'moduler') ?><?php the_time('j F, Y') ?> <?php echo __('by ', 'moduler') ?><?php the_author_posts_link(); ?></p>
-        <p class="card-text"><?php the_content(); ?></p>
+        <p class="card-text">
+           <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <?php the_content(); ?>
+            </div>
+
+        </p>
       </div>
     </div>
   </div>
+
+
+  <?php wp_link_pages( array(
+  'before'      => '  <div class="col-12">
+    <div class="card mb-4">
+      <div class="card-body">' . __( 'Pages:', 'moduler' ) . '</span>',
+  'after'       => '      </div>
+    </div>
+  </div>',
+  'link_before' => '<span>',
+  'link_after'  => '</span>',
+  ) );
+?>
 
   <div class="col-6">
     <div class="card mb-4">
@@ -40,6 +57,7 @@
       </div>
     </div>
   </div>
+
 
             <?php comments_template(); ?>
 
