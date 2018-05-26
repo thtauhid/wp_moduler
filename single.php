@@ -21,6 +21,26 @@
       </div>
     </div>
   </div>
+
+  <div class="col-6">
+    <div class="card mb-4">
+      <div class="card-body">
+
+<?php echo __('Categories: ', 'moduler');  the_category( ', ' ); ?>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card mb-4">
+      <div class="card-body">
+
+    <?php echo __('Tags: ', 'moduler') . get_the_tag_list('', ', ', ''); ?>
+
+      </div>
+    </div>
+  </div>
+
             <?php comments_template(); ?>
 
 <?php endwhile; ?>
