@@ -281,7 +281,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_client_1_img', array(
-			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/beautiful-blur-carefree-713312.jpg',
 			'type' => 'theme_mod',
 		'sanitize_callback' => 'sanitize_moduler_client_1_img',
 		));
@@ -326,7 +326,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_client_2_img', array(
-			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/beard-eyewear-face-874158.jpg',
 			'type' => 'theme_mod',
 		'sanitize_callback' => 'sanitize_moduler_client_2_img',
 		));
@@ -371,7 +371,7 @@ function moduler_customize_register_client_area($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_client_3_img', array(
-			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/adolescent-attractive-beautiful-638700.jpg',
 			'type' => 'theme_mod',
 		'sanitize_callback' => 'sanitize_moduler_client_3_img',
 		));
@@ -446,7 +446,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_team_member_1_img', array(
-			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/adolescent-attractive-beautiful-638700.jpg',
 			'type' => 'theme_mod',
 		'sanitize_callback' => 'sanitize_moduler_team_member_1_img',
 		));
@@ -554,7 +554,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_team_member_2_img', array(
-			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/beard-eyewear-face-874158.jpg',
 			'type' => 'theme_mod',
 		'sanitize_callback' => 'sanitize_moduler_team_member_2_img',
 		));
@@ -659,7 +659,7 @@ function moduler_customize_register_our_team($wp_customize) {
 
 		//Image
 		$wp_customize->add_setting('moduler_team_member_3_img', array(
-			'default' => esc_url( get_template_directory_uri() ). '/assets/placeholder_face.png',
+			'default' => esc_url( get_template_directory_uri() ). '/assets/beautiful-blur-carefree-713312.jpg',
 			'type' => 'theme_mod',
 		'sanitize_callback' => 'sanitize_moduler_team_member_3_img',
 		));

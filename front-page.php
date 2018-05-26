@@ -37,7 +37,7 @@
 
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('moduler_client_1_img',  get_template_directory_uri().'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('moduler_client_1_name', __('Tasnimul H. Tauhid', 'moduler')); ?></div>
+            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('moduler_client_1_img',  get_template_directory_uri().'/assets/beautiful-blur-carefree-713312.jpg'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('moduler_client_1_name', __('Tasnimul H. Tauhid', 'moduler')); ?></div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('moduler_client_1_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler')); ?></p>
             </div>
@@ -46,7 +46,7 @@
 
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('moduler_client_2_img',  get_template_directory_uri().'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('moduler_client_2_name', __('Tasnimul H. Tauhid', 'moduler')); ?></div>
+            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('moduler_client_2_img',  get_template_directory_uri().'/assets/beard-eyewear-face-874158.jpg'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('moduler_client_2_name', __('Tasnimul H. Tauhid', 'moduler')); ?></div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('moduler_client_2_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler')); ?></p>
             </div>
@@ -55,7 +55,7 @@
 
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('moduler_client_3_img',  get_template_directory_uri().'/assets/placeholder_face.png'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('moduler_client_3_name', __('Tasnimul H. Tauhid', 'moduler')); ?></div>
+            <div class="card-header"> <img class="rounded-circle" src="<?php echo get_theme_mod('moduler_client_3_img',  get_template_directory_uri().'/assets/adolescent-attractive-beautiful-638700.jpg'); ?>" height="50" width="50" style="padding: 5px"><?php echo get_theme_mod('moduler_client_3_name', __('Tasnimul H. Tauhid', 'moduler')); ?></div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('moduler_client_3_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler')); ?></p>
             </div>
@@ -68,7 +68,7 @@
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
 
-            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('moduler_team_member_1_img',  get_template_directory_uri().'/assets/face1.png'); ?>" style="padding: 25px" >
+            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('moduler_team_member_1_img',  get_template_directory_uri().'/assets/adolescent-attractive-beautiful-638700.jpg'); ?>" style="padding: 25px" >
 
             <div class="card-header">
               <h4 class="card-title text-center"><?php echo get_theme_mod('moduler_team_member_1_name', __('Tasnimul H. Tauhid', 'moduler')); ?></h4>
@@ -84,7 +84,7 @@
     </div>
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('moduler_team_member_2_img',  get_template_directory_uri().'/assets/placeholder_face.png'); ?>" style="padding: 25px">
+            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('moduler_team_member_2_img',  get_template_directory_uri().'/assets/beard-eyewear-face-874158.jpg'); ?>" style="padding: 25px">
             <div class="card-header">
               <h4 class="card-title text-center"><?php echo get_theme_mod('moduler_team_member_2_name', __('Tasnimul H. Tauhid', 'moduler')); ?></h4>
               <h6 class="card-title text-center"><?php echo get_theme_mod('moduler_team_member_2_designation', __('Web Developer', 'moduler')); ?></h6>
@@ -99,7 +99,7 @@
     </div>
     <div class="col-4">
           <div class="card text-white bg-secondary mb-3" style="max-width: 25rem;">
-            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('moduler_team_member_3_img',  get_template_directory_uri().'/assets/placeholder_face.png'); ?>" style="padding: 25px">
+            <img class="card-img-top rounded-circle" src="<?php echo get_theme_mod('moduler_team_member_3_img',  get_template_directory_uri().'/assets/beautiful-blur-carefree-713312.jpg'); ?>" style="padding: 25px">
             <div class="card-header">
               <h4 class="card-title text-center"><?php echo get_theme_mod('moduler_team_member_3_name', __('Tasnimul H. Tauhid', 'moduler')); ?></h4>
               <h6 class="card-title text-center"><?php echo get_theme_mod('moduler_team_member_3_designation', __('Web Developer', 'moduler')); ?></h6>
