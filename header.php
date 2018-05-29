@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="<?php //echo esc_url( get_template_directory_uri() ); ?>/assets/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <?php //wp_title(); ?>      
     <?php wp_head(); ?>
@@ -24,7 +24,7 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
    <?php wp_nav_menu( array(
     'theme_location'  => 'primary',
-    'depth'              => 4, // 1 = no dropdowns, 2 = with dropdowns.
+    'depth'              => 2, // 1 = no dropdowns, 2 = with dropdowns.
     'container'       => 'div',
     'container_class' => 'collapse navbar-collapse',
   'container_id'    => 'bs-example-navbar-collapse-1',

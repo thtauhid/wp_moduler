@@ -20,3 +20,16 @@ if ( ! isset( $content_width ) ) {
 }
 
 require get_template_directory(). '/inc/customizer.php';
+
+
+function moduler_add_bootstrap() {
+
+//	global $wp_scripts;
+
+	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.js' );
+	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'moduler_add_bootstrap');
+
