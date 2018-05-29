@@ -167,17 +167,17 @@
       if(has_post_thumbnail()) {the_post_thumbnail_url();} else{echo "http://via.placeholder.com/380x210";} ?>"></a>
        <div class="card-body">
         <h4 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
-        <p>On <?php the_time('j F, Y') ?> by <?php the_author_posts_link(); ?> </p>
+        <p> <?php echo __('On ', 'moduler'); the_time('j F, Y'); echo __(' by ', 'moduler');  the_author_posts_link(); ?> </p>
 
         <p class="card-text"><?php the_excerpt() ?></p>
-          <button type="button" class="a btn btn-outline-primary"><a href="<?php the_permalink() ?>">More >></a></button><br>
+          <button type="button" class="a btn btn-outline-primary"><a href="<?php the_permalink(); ?>"><?php echo __('More >>', 'moduler') ?></a></button><br>
       </div>
     </div>
   </div>
 <?php endwhile; ?>
   </div>
         <?php else : ?>
-      <p><?php __('No Posts Found', 'moduler'); ?></p>
+      <p><?php echo __('No Posts Found', 'moduler'); ?></p>
     <?php endif; ?>
   <br>
 
