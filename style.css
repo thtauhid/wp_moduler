@@ -66,3 +66,36 @@ li {
 .alignright {}
 .alignleft {}
 .aligncenter {}
+
+.moduler_image_thumabnail_area_img 
+{
+	height: 210px !important;
+	 width: 100% !important;
+	}
+.moduler_client_area 
+{
+	padding: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+.moduler_team_area_img 
+{
+	padding: 25px;
+}
+
+
+.moduler_client_area_main
+{
+	max-width: 25rem;
+}
+
+.moduler_client_area_main
+{
+	max-width: 25rem;
+}
+.moduler_button_check_out_cta
+{
+	padding: 15px !important;
+	font-size: 15px !important;
+}
