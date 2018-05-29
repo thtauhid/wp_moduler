@@ -184,7 +184,7 @@
 <h3 class="text-center"><?php echo get_theme_mod('moduler_contact_title', __('Contact', 'moduler')); ?></h3><hr>
   <div class="row mb-4">
     <!--Contact-->
-    <div class="col-2">
+    <div class="col-12">
       <div class="text-center">
 
         <a href="<?php echo get_theme_mod('moduler_social_media_fb', '#'); ?>">
@@ -213,14 +213,5 @@
       </div>
 
     </div>
-    <div class="col-10">
-      <form method="post">
-        <input type="text" name="contactpersonname" placeholder="<?php echo  __('Name', 'moduler'); ?>" required="required" style="padding: 10px; width: 100%"><br><br>
-        <input type="text" name="emailaddress" placeholder="<?php echo __('Email Address', 'moduler'); ?>" size="40" required="required" style="padding: 10px; width: 100%"><br><br>
-        <textarea name="contact_textarea" placeholder="<?php echo __('Your Message', 'moduler'); ?>" cols="40" rows="6" style="padding: 10px; width: 100%"></textarea><br><br>
-        <button type="submit" class="btn btn-outline-primary" style="padding: 10px"><?php echo __('Submit', 'moduler'); ?></button><br>
-      </form>
-    </div>
-
   </div>
 <?php get_footer(); ?>
