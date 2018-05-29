@@ -949,22 +949,6 @@ function moduler_customize_register_contact($wp_customize) {
 	));
 
 
-
-	//Email : To address
-	$wp_customize->add_setting('moduler_contact_email_to_address', array(
-		'default' => __('', 'moduler'),
-		'type' => 'theme_mod',
-		'sanitize_callback' => 'sanitize_moduler_contact_email_to_address',
-	));
-
-	$wp_customize->add_control('moduler_contact_email_to_address', array(
-		'label' => __('To email address:', 'moduler'),
-		'section' => 'moduler_Contact',
-		'priority' => '5'
-	));
-
-
-
 }
 
 add_action('customize_register', 'moduler_customize_register_contact');

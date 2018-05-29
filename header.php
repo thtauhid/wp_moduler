@@ -36,22 +36,3 @@
     <?php get_search_form(); ?>
   </div>
 </nav>
-
-<?php
-if (isset($_POST['emailaddress'])) {
-
-    $to = get_theme_mod('moduler_contact_email_to_address');
-    $subject = "Contact request.";
-    $message = $_POST['contact_textarea'];
-    $headers = array(
-      'From: '. $_POST['contactpersonname'] . ' <' . $_POST['emailaddress'] . '>',
-       );
-
-       wp_mail( $to, $subject, $message, $headers );
-
-    echo '<div class="alert alert-dismissible alert-success">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>' . 
-  __('<strong>Great!</strong> Contact request sent.', 'moduler') .
-'</div>';
-}
-?>
