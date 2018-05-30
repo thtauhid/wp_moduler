@@ -24,8 +24,6 @@ require get_template_directory(). '/inc/customizer.php';
 
 function moduler_add_bootstrap() {
 
-//	global $wp_scripts;
-
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.js' );
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
 
@@ -33,3 +31,10 @@ function moduler_add_bootstrap() {
 
 add_action( 'wp_enqueue_scripts', 'moduler_add_bootstrap');
 
+function moduler_add_fontawesome() {
+
+	wp_enqueue_style( 'fontawesome_css', get_template_directory_uri() . '/assets/fontawesome/css/fontawesome-all.min.css' );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'moduler_add_fontawesome');

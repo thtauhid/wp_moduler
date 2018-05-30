@@ -76,8 +76,8 @@
             </div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('moduler_team_member_1_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler')); ?></p>
-              <a href="<?php echo get_theme_mod('moduler_team_member_1_facebook', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
-              <a href="<?php echo get_theme_mod('moduler_team_member_1_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
+              <a href="<?php echo get_theme_mod('moduler_team_member_1_facebook', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fab fa-facebook-square"  style="font-size: 25px;"></i></button></a>
+              <a href="<?php echo get_theme_mod('moduler_team_member_1_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fab fa-twitter-square"  style="font-size:25px; "></i></button></a>
               <a href="mailto:<?php echo get_theme_mod('moduler_team_member_1_email', ''); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
@@ -91,8 +91,8 @@
             </div>
             <div class="card-body">
               <p class="card-text"><?php echo get_theme_mod('moduler_team_member_2_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler')); ?></p>
-              <a href="<?php echo get_theme_mod('moduler_team_member_2_facebook', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-facebook-square"  style="font-size: 25px;"></i></button></a>
-              <a href="<?php echo get_theme_mod('moduler_team_member_2_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-twitter-square"  style="font-size:25px; "></i></button></a>
+              <a href="<?php echo get_theme_mod('moduler_team_member_2_facebook', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fab fa-facebook-square"  style="font-size: 25px;"></i></button></a>
+              <a href="<?php echo get_theme_mod('moduler_team_member_2_twitter', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fab fa-twitter-square"  style="font-size:25px; "></i></button></a>
               <a href="mailto:<?php echo get_theme_mod('moduler_team_member_2_email', ''); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
@@ -109,13 +109,13 @@
 
               <a href="<?php echo get_theme_mod('moduler_team_member_3_facebook', '#'); ?>">
                 <button type="button" class="btn btn-outline-primary" style="padding: 5px;">
-                  <i class="fa fa-facebook-square"  style="font-size: 25px;"></i>
+                  <i class="fab fa-facebook-square"  style="font-size: 25px;"></i>
                 </button>
               </a>
 
               <a href="<?php echo get_theme_mod('moduler_team_member_3_twitter', '#'); ?>">
                 <button type="button" class="btn btn-outline-primary" style="padding: 5px;">
-                  <i class="fa fa-twitter-square"  style="font-size:25px; "></i>
+                  <i class="fab fa-twitter-square"  style="font-size:25px; "></i>
                 </button>
               </a>
               <a href="mailto:<?php echo get_theme_mod('moduler_team_member_3_email', ''); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size:25px; "></i></button></a>
@@ -189,23 +189,23 @@
 
         <a href="<?php echo get_theme_mod('moduler_social_media_fb', '#'); ?>">
           <button type="button" class="btn btn-outline-primary" style="padding: 15px;">
-            <i class="fa fa-facebook-square"  style="font-size: 70px;"></i>
+            <i class="fab fa-facebook-square"  style="font-size: 70px;"></i>
           </button>
         </a>
 
         <a href="<?php echo get_theme_mod('moduler_social_media_google_plus', '#'); ?>">
           <button type="button" class="btn btn-outline-primary" style="padding: 15px;">
-            <i class="fa fa-google-plus-square"  style="font-size: 70px;"></i>
+            <i class="fab fa-google-plus-square"  style="font-size: 70px;"></i>
           </button>
         </a>
 
         <a href="<?php echo get_theme_mod('moduler_social_media_twitter', '#'); ?>">
           <button type="button" class="btn btn-outline-primary" style="padding: 15px;">
-            <i class="fa fa-twitter-square"  style="font-size: 70px"></i>
+            <i class="fab fa-twitter-square"  style="font-size: 70px"></i>
           </button>
         </a>
 
-        <a href="<?php echo  get_theme_mod('moduler_social_media_linkedin', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 15px;"><i class="fa fa-linkedin-square"  style="font-size: 70px"></i>
+        <a href="<?php echo  get_theme_mod('moduler_social_media_linkedin', '#'); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 15px;"><i class="fab fa-linkedin"  style="font-size: 70px"></i>
         </button>
       </a>
 
