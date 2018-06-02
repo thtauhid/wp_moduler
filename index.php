@@ -14,10 +14,10 @@
       if(has_post_thumbnail()) {the_post_thumbnail_url();} else{ echo get_template_directory_uri() . '/assets/binder-blank-book-bindings-479815.jpg'; } ?>"></a>
        <div class="card-body">
         <h4 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
-        <p><?php echo __('On ', 'moduler'); the_time('j F, Y');  echo __(' by ', 'moduler'); the_author_posts_link(); ?> </p>
+        <p><?php echo esc_html( __('On ', 'moduler') ); the_time('j F, Y');  echo esc_html( __(' by ', 'moduler') ); the_author_posts_link(); ?> </p>
 
         <p class="card-text"><?php the_excerpt() ?></p>
-          <a href="<?php the_permalink() ?>"><?php echo __('More >>', 'moduler') ?></a><br>
+          <a href="<?php the_permalink() ?>"><?php echo esc_html( __('More >>', 'moduler') ); ?></a><br>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
     </div>
   </div>
         <?php else : ?>
-      <p><?php echo __('No Posts Found', 'moduler'); ?></p>
+      <p><?php echo esc_html( __('No Posts Found', 'moduler') ); ?></p>
     <?php endif; ?>
   <!-- </div> -->
   <!-- </div> -->

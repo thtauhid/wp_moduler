@@ -15,7 +15,7 @@
       
       <div class="card-body">
         <h2 class="card-title"><?php the_title() ?></h2>
-        <p><?php echo __('On ', 'moduler') ?><?php the_time('j F, Y') ?> <?php echo __('by ', 'moduler') ?><?php the_author_posts_link(); ?></p>
+        <p><?php echo esc_html( __('On ', 'moduler') ); ?><?php the_time('j F, Y') ?> <?php echo esc_html( __('by ', 'moduler') ); ?><?php the_author_posts_link(); ?></p>
         <p class="card-text">
            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php the_content(); ?>
@@ -43,7 +43,7 @@
     <div class="card mb-4">
       <div class="card-body">
 
-<?php echo __('Categories: ', 'moduler');  the_category( ', ' ); ?>
+<?php echo esc_html( __('Categories: ', 'moduler') );  the_category( ', ' ); ?>
       </div>
     </div>
   </div>
@@ -52,7 +52,7 @@
     <div class="card mb-4">
       <div class="card-body">
 
-    <?php echo __('Tags: ', 'moduler') . get_the_tag_list('', ', ', ''); ?>
+    <?php echo esc_html( __('Tags: ', 'moduler') ); . get_the_tag_list('', ', ', ''); ?>
 
       </div>
     </div>
@@ -64,7 +64,7 @@
 <?php endwhile; ?>
   </div>
         <?php else : ?>
-      <p><?php __('No Posts Found', 'moduler'); ?></p>
+      <p><?php echo esc_html( __('No Posts Found', 'moduler') ); ?></p>
     <?php endif; ?>
   <!-- </div> -->
   <!-- </div> -->

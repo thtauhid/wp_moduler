@@ -15,7 +15,7 @@
       
       <div class="card-body">
         <h2 class="card-title"><?php the_title() ?></h2>
-        <p><?php echo __('On ', 'moduler') ?><?php the_time('j F, Y') ?> <?php echo __('by ', 'moduler') ?><?php the_author_posts_link(); ?></p>
+        <p><?php echo esc_html( __('On ', 'moduler') ); ?><?php the_time('j F, Y') ?> <?php echo esc_html( __('by ', 'moduler') ); ?><?php the_author_posts_link(); ?></p>
         <p class="card-text">
            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php the_content(); ?>
@@ -43,7 +43,7 @@
 <?php endwhile; ?>
   </div>
         <?php else : ?>
-      <p><?php __('No Posts Found', 'moduler'); ?></p>
+      <p><?php echo esc_html( __('No Posts Found', 'moduler') ); ?></p>
     <?php endif; ?>
   <!-- </div> -->
   <!-- </div> -->
