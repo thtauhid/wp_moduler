@@ -4,13 +4,13 @@
 
 		<?php if( previous_comments_link() ) : ?>
 		  <li class="previous">
-		    <?php previous_comments_link( __( '&larr; Older Comments', '' ) ); ?>
+		    <?php previous_comments_link( __( '&larr; Older Comments', 'moduler' ) ); ?>
 		  </li>
 		<?php endif; ?>
 
 		<?php if( next_comments_link() ) : ?>
 		  <li class="next">
-		    <?php next_comments_link( __( '&larr; Newer Comments', '' ) ); ?>
+		    <?php next_comments_link( __( '&larr; Newer Comments', 'moduler' ) ); ?>
 		  </li>
 		<?php endif; ?>
 			
