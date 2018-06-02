@@ -52,7 +52,7 @@
     <div class="card mb-4">
       <div class="card-body">
 
-    <?php echo esc_html( __('Tags: ', 'moduler') ); . get_the_tag_list('', ', ', ''); ?>
+    <?php echo esc_html( __('Tags: ', 'moduler') ) . get_the_tag_list('', ', ', ''); ?>
 
       </div>
     </div>
