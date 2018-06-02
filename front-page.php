@@ -132,8 +132,7 @@
       <div class="jumbotron">
 <blockquote class="blockquote text-center" >
   <h3><?php echo esc_html( get_theme_mod('moduler_cta_sub_title', __('Something, That is pre built', 'moduler') ) ); ?></h3>
-  <p class="mb-0"><?php echo esc_html( get_theme_mod('moduler_cta_main_text', __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>', 'moduler') ) ); ?><br>
+  <p class="mb-0"><?php echo esc_html( get_theme_mod('moduler_cta_main_text', __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.', 'moduler') ) ); ?></p><br>
   <a href="<?php echo esc_html( get_theme_mod('moduler_cta_button_url', '#') ); ?>"><button type="button" class="btn btn-outline-primary moduler_button_check_out_cta"><b><?php echo esc_html( get_theme_mod('moduler_cta_button_text', __('Check Out', 'moduler') ) ); ?></b></button></a>
 </blockquote>
       </div>

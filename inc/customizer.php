@@ -813,7 +813,7 @@ function moduler_customize_register_cta($wp_customize) {
 
 	//Main Text
 	$wp_customize->add_setting('moduler_cta_main_text', array(
-		'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>', 'moduler'),
+		'default' => __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.', 'moduler'),
 		'type' => 'theme_mod',
 		'sanitize_callback' => 'sanitize_moduler_cta_main_text',
 	));
