@@ -11,7 +11,7 @@
     <div class="card mb-4">
       <img class="img-thumbnail" src="
       <?php 
-      if(has_post_thumbnail()) {the_post_thumbnail_url();} else{ echo get_template_directory_uri() . '/assets/binder-blank-book-bindings-479815.jpg'; } ?>">
+      if(has_post_thumbnail()) {the_post_thumbnail_url();} else{ echo esc_html( get_template_directory_uri() . '/assets/binder-blank-book-bindings-479815.jpg'); } ?>">
       
       <div class="card-body">
         <h2 class="card-title"><?php the_title() ?></h2>
