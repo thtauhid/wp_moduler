@@ -170,7 +170,7 @@
         <p> <?php echo __('On ', 'moduler'); the_time('j F, Y'); echo __(' by ', 'moduler');  the_author_posts_link(); ?> </p>
 
         <p class="card-text"><?php the_excerpt() ?></p>
-          <button type="button" class="a btn btn-outline-primary"><a href="<?php the_permalink(); ?>"><?php echo __('More >>', 'moduler') ?></a></button><br>
+          <a href="<?php the_permalink(); ?>"><?php echo __('More >>', 'moduler') ?></a><br>
       </div>
     </div>
   </div>
