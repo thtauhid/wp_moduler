@@ -24,8 +24,11 @@ require get_template_directory(). '/inc/customizer.php';
 
 function moduler_add_bootstrap() {
 
-	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.js' );
+	wp_enqueue_script( 'jquery_js', get_template_directory_uri() . '/assets/js/jquery-3.2.1.slim.min.js' );
+	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js' );
+
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+	
 
 }
 

@@ -24,7 +24,7 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
    <?php wp_nav_menu( array(
     'theme_location'  => 'primary',
-    'depth'              => 1, // 1 = no dropdowns, 2 = with dropdowns.
+    'depth'              => 2, // 1 = no dropdowns, 2 = with dropdowns.
     'container'       => 'div',
     'container_class' => 'collapse navbar-collapse',
   'container_id'    => 'bs-example-navbar-collapse-1',
