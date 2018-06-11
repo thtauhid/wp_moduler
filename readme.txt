@@ -19,3 +19,6 @@ binder-blank-book-bindings-479815.jpg		:	Photo by imagesthai.com from Pexels und
  * Copyright 2012-2018 Thomas Park
  * Licensed under MIT
  * Based on Bootstrap
+
+#Classes:
+ Wp bootstrap nav walker: Under GPL licence from https://github.com/wp-bootstrap/wp-bootstrap-navwalker
