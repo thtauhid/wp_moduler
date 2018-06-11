@@ -1,5 +1,5 @@
 <?php
-require_once get_template_directory() . 'assets/classes/class-wp-bootstrap-navwalker.php';
+require_once get_template_directory() . '/assets/classes/class-wp-bootstrap-navwalker.php';
 
 register_nav_menus( array(
 	'primary' => __( 'Primary Menu', 'moduler' ),
