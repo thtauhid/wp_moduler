@@ -20,7 +20,7 @@
         <h4 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
         <p><?php echo esc_html( __('On ', 'moduler') ) ?><?php the_time('j F, Y') ?> <?php echo esc_html( __('by ', 'moduler') ) ?><?php the_author_posts_link(); ?></a></p>
         <p class="card-text"><?php the_excerpt() ?></p>
-          <a href="<?php the_permalink() ?>"><?php echo esc_html( __('More >>', 'moduler') ); ?></a><br>
+          <a class="btn btn-outline-primary" href="<?php the_permalink() ?>"><?php echo esc_html( __('More >>', 'moduler') ); ?></a><br>
       </div>
     </div>
   </div>

@@ -169,7 +169,7 @@
         <p> <?php echo esc_html( __('On ', 'moduler') ); the_time('j F, Y'); echo esc_html( __(' by ', 'moduler') );  the_author_posts_link(); ?> </p>
 
         <p class="card-text"><?php the_excerpt() ?></p>
-          <a href="<?php the_permalink(); ?>"><?php echo esc_html( __('More >>', 'moduler') ); ?></a><br>
+          <a class="btn btn-outline-primary" href="<?php the_permalink(); ?>"><?php echo esc_html( __('More >>', 'moduler') ); ?></a><br>
       </div>
     </div>
   </div>
