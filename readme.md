@@ -1,9 +1,9 @@
 # Photocredit (located in /asstes/):
 
-beard-eyewear-face-874158.jpg               :	Photo by bruce mars from Pexels under CC0 licence
-adolescent-attractive-beautiful-638700.jpg  :	Photo by Thierry Fillieul from Pexels under CC0 licence
-beautiful-blur-carefree-713312.jpg          :	Photo by Min An from Pexels under CC0 licence
-binder-blank-book-bindings-479815.jpg       :	Photo by imagesthai.com from Pexels under CC0 licence
+* beard-eyewear-face-874158.jpg               :	Photo by bruce mars from Pexels under CC0 licence
+* adolescent-attractive-beautiful-638700.jpg  :	Photo by Thierry Fillieul from Pexels under CC0 licence
+* beautiful-blur-carefree-713312.jpg          :	Photo by Min An from Pexels under CC0 licence
+* binder-blank-book-bindings-479815.jpg       :	Photo by imagesthai.com from Pexels under CC0 licence
 
 # Framework:
 
@@ -21,7 +21,7 @@ binder-blank-book-bindings-479815.jpg       :	Photo by imagesthai.com from Pexel
  * Based on Bootstrap
 
 # Classes:
- Wp bootstrap nav walker: Under GPL licence from https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+ * Wp bootstrap nav walker: Under GPL licence from https://github.com/wp-bootstrap/wp-bootstrap-navwalker
 
 
 # Icons:
