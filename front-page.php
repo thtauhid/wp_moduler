@@ -1,6 +1,7 @@
 <?php get_header() ?> 
 <div class="jumbotron">
-  <h1 class="display-3"><?php echo esc_html( get_theme_mod('moduler_main_title', __('Hello, world!', 'moduler') )); ?></h1>
+  <h1 class="display-3">
+<?php echo esc_html( get_theme_mod('moduler_main_title', __('Hello, world!', 'moduler') )); ?></h1>
   <p class="lead"><?php echo esc_html( get_theme_mod( 'moduler_below_title', __('This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.', 'moduler') ) ); ?></p>
   <hr class="my-4">
   <p><?php echo esc_html( get_theme_mod( 'moduler_main_text', __('It uses utility classes for typography and spacing to space content out within the larger container.', 'moduler') ) ); ?></p>
@@ -35,16 +36,20 @@
 
     <!--Client Area-->
 
-    <div class="col-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
           <div class="card text-white bg-secondary mb-3 moduler_client_area_main">
-            <div class="card-header"> <img class="rounded-circle moduler_client_area" src="<?php echo esc_html( get_theme_mod('moduler_client_1_img',  get_template_directory_uri().'/assets/beautiful-blur-carefree-713312.jpg') ); ?>"><?php echo esc_html( get_theme_mod('moduler_client_1_name', __('Tasnimul H. Tauhid', 'moduler') ) ); ?></div>
+            <div class="card-header"> 
+              <img class="rounded-circle moduler_client_area" src="<?php echo esc_html( get_theme_mod('moduler_client_1_img',  get_template_directory_uri().'/assets/beautiful-blur-carefree-713312.jpg') ); ?>"><?php echo esc_html( get_theme_mod('moduler_client_1_name', __('Tasnimul H. Tauhid', 'moduler') ) ); ?>
+            </div>
             <div class="card-body">
-              <p class="card-text"><?php echo esc_html( get_theme_mod('moduler_client_1_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler') ) ); ?></p>
+              <p class="card-text">
+                <?php echo esc_html( get_theme_mod('moduler_client_1_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler') ) ); ?>
+              </p>
             </div>
           </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
           <div class="card text-white bg-secondary mb-3 moduler_client_area_main">
             <div class="card-header"> <img class="rounded-circle moduler_client_area" src="<?php echo esc_html( get_theme_mod('moduler_client_2_img',  get_template_directory_uri().'/assets/beard-eyewear-face-874158.jpg') ); ?>"><?php echo esc_html( get_theme_mod('moduler_client_2_name', __('Tasnimul H. Tauhid', 'moduler') ) ); ?></div>
             <div class="card-body">
@@ -53,7 +58,7 @@
           </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
           <div class="card text-white bg-secondary mb-3 moduler_client_area_main">
             <div class="card-header"> <img class="rounded-circle moduler_client_area" src="<?php echo esc_html( get_theme_mod('moduler_client_3_img',  get_template_directory_uri().'/assets/adolescent-attractive-beautiful-638700.jpg') ); ?>"><?php echo esc_html( get_theme_mod('moduler_client_3_name', __('Tasnimul H. Tauhid', 'moduler') ) ); ?></div>
             <div class="card-body">
@@ -65,8 +70,8 @@
  <h3 class="text-center"><?php echo esc_html( get_theme_mod('moduler_', __('Our Awesome Team', 'moduler') ) ); ?></h3><hr>
   <div class="row">
     <!--Our Team-->
-    <div class="col-4">
-          <div class="card text-white bg-secondary mb-3 moduler_client_area_main">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="card text-white bg-secondary moduler_client_area_main">
 
             <img class="card-img-top rounded-circle moduler_team_area_img" src="<?php echo  esc_html( get_theme_mod('moduler_team_member_1_img',  get_template_directory_uri().'/assets/adolescent-attractive-beautiful-638700.jpg') ); ?>">
 
@@ -75,14 +80,16 @@
               <h6 class="card-title text-center"><?php echo esc_html( get_theme_mod('moduler_team_member_1_designation', __('Web Developer', 'moduler') ) ); ?></h6>
             </div>
             <div class="card-body">
-              <p class="card-text"><?php echo esc_html( get_theme_mod('moduler_team_member_1_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler') ) ); ?></p>
+              <p class="card-text">
+              <?php echo esc_html( get_theme_mod('moduler_team_member_1_text', __('Some quick example text to build on the card title and make up the bulk of the cards content.', 'moduler') ) ); ?>
+              </p>
               <a href="<?php echo esc_html( get_theme_mod('moduler_team_member_1_facebook', '#') ); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fab fa-facebook-square"  style="font-size: 25px;"></i></button></a>
               <a href="<?php echo esc_html( get_theme_mod('moduler_team_member_1_twitter', '#') ); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fab fa-twitter-square"  style="font-size:25px; "></i></button></a>
               <a href="mailto:<?php echo esc_html( get_theme_mod('moduler_team_member_1_email', '') ); ?>"><button type="button" class="btn btn-outline-primary" style="padding: 5px;"><i class="fa fa-envelope-square"  style="font-size:25px; "></i></button></a>
             </div>
           </div>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
           <div class="card text-white bg-secondary  moduler_client_area_main">
             <img class="card-img-top rounded-circle moduler_team_area_img" src="<?php echo esc_html( get_theme_mod('moduler_team_member_2_img',  get_template_directory_uri().'/assets/beard-eyewear-face-874158.jpg') ); ?>">
             <div class="card-header">
@@ -97,7 +104,7 @@
             </div>
           </div>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
           <div class="card text-white bg-secondary mb-3 moduler_client_area_main">
             <img class="card-img-top rounded-circle moduler_team_area_img" src="<?php echo  esc_html( get_theme_mod('moduler_team_member_3_img',  get_template_directory_uri().'/assets/beautiful-blur-carefree-713312.jpg') ); ?>">
             <div class="card-header">
@@ -159,12 +166,12 @@
             <?php while ($the_query -> have_posts() ) : $the_query -> the_post(); ?>
 
 
-  <div class="col-4">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
     <div class="card mb-4">
-     <a href="<?php the_permalink(); ?>"> <img class="img-thumbnail moduler_image_thumabnail_area_img" src="
+      <a href="<?php the_permalink(); ?>"> <img class="img-thumbnail moduler_image_thumabnail_area_img" src="
       <?php 
       if(has_post_thumbnail() ) {the_post_thumbnail_url();} else{ echo esc_html( get_template_directory_uri() . '/assets/binder-blank-book-bindings-479815.jpg'); } ?>"></a>
-       <div class="card-body">
+      <div class="card-body">
         <h4 class="card-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
         <p> <?php echo esc_html( __('On ', 'moduler') ); the_time('j F, Y'); echo esc_html( __(' by ', 'moduler') );  the_author_posts_link(); ?> </p>
 
