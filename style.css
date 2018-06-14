@@ -2,7 +2,7 @@
 Theme Name: Moduler
 Author: Tasnimul H Tauhid
 Description: A module based theme for wordpress
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: moduler
@@ -70,7 +70,7 @@ li {
 .moduler_image_thumabnail_area_img 
 {
 	height: 210px !important;
-	 width: 100% !important;
+	width: 100% !important;
 	}
 .moduler_client_area 
 {
