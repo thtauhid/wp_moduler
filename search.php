@@ -11,7 +11,7 @@
       <?php while (have_posts()) : the_post(); ?>
 
 
-  <div class="col-4">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
     <div class="card mb-4">
      <a href="<?php the_permalink(); ?>"> <img class="img-thumbnail moduler_image_thumabnail_area_img" src="
       <?php 
